@@ -465,8 +465,27 @@
 
     .hero-inner {
       position: relative;
-      z-index: 2;
+      //*z-index: 2;*//
       max-width: 720px;
+    }
+
+    .hero-imagem {
+      width: 100%;
+      /* Ajusta conforme necessário */
+      max-width: 300px;
+      /* Limita o tamanho */
+      margin: 20px auto;
+      display: block;
+    }
+
+    .container-imagem-flutuante {
+      position: absolute;
+      top: 50px;
+      /* Distância do topo */
+      right: 50px;
+      /* Distância da direita */
+      z-index: 8;
+      /* Garante que ela fique na frente */
     }
 
     .hero-eyebrow {
@@ -1931,6 +1950,9 @@
 
       <div class="container">
         <div class="hero-inner">
+          <div class="container-imagem-flutuante">
+            <img src="assests/icon_o_original-removebg-preview.png" alt="logo O ORIGINAL">
+          </div>
           <div class="hero-eyebrow reveal">
             <span class="eyebrow">Rio Verde · Goiás · Desde 2018</span>
           </div>
