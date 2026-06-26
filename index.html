@@ -2364,7 +2364,7 @@
             <input type="number" id="convidados" placeholder="Ex: 50" min="1" />
           </div>
           <div class="form-group">
-            <label>Mensagem</label>
+            <label>Detalhes/Observações</label>
             <textarea id="mensagem" placeholder="Detalhes do evento, data preferida…"></textarea>
           </div>
           <button type="button" class="btn btn-gold"
@@ -2817,11 +2817,11 @@
       const msg = document.getElementById('mensagem').value;
 
       // Monta a mensagem formatada
-      const texto = `Olá! Me chamo ${nome}, e gostaria de solicitar um orçamento.\n` +
-        `Telefone: ${telefone}\n` +
+      const texto = `Olá! Me chamo ${nome}, e gostaria de solicitar o orçamento pra um evento.\n` +
+        `Meu telefone: ${telefone}\n` +
         `Tipo de evento: ${evento}\n` +
         `Número de convidados: ${convidados}\n` +
-        `Mensagem: ${msg}`;
+        `Detalhes/Observações: ${msg}`;
 
       // Codifica o texto para ser enviado via URL
       const url = `https://wa.me/+5564999990000?text=${encodeURIComponent(texto)}`;
