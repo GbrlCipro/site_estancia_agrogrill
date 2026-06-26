@@ -2342,15 +2342,15 @@
           <h3>Solicitar Orçamento</h3>
           <div class="form-group">
             <label>Nome completo</label>
-            <input type="text" placeholder="Seu nome" />
+            <input type="text" id="nome" placeholder="Seu nome" />
           </div>
           <div class="form-group">
             <label>WhatsApp / Telefone</label>
-            <input type="tel" placeholder="(64) 9 9999-0000" />
+            <input type="tel" id="telefone" placeholder="(64) 9 9999-9999" />
           </div>
           <div class="form-group">
             <label>Tipo de Evento</label>
-            <select>
+            <select id="tipo_evento">
               <option value="">Selecione…</option>
               <option>Reunião Corporativa</option>
               <option>Aniversário</option>
@@ -2361,16 +2361,17 @@
           </div>
           <div class="form-group">
             <label>Número de Convidados</label>
-            <input type="number" placeholder="Ex: 50" min="1" />
+            <input type="number" id="convidados" placeholder="Ex: 50" min="1" />
           </div>
           <div class="form-group">
             <label>Mensagem</label>
-            <textarea placeholder="Detalhes do evento, data preferida…"></textarea>
+            <textarea id="mensagem" placeholder="Detalhes do evento, data preferida…"></textarea>
           </div>
-          <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20um%20evento."
-            target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:0.5rem">
+          <button type="button" class="btn btn-gold"
+            style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:0.5rem; cursor:pointer;"
+            onclick="enviarWhatsApp()">
             💬 Enviar via WhatsApp
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -2805,6 +2806,29 @@
         heroBg.style.transform = `scale(1) translateY(${window.scrollY * 0.25}px)`;
       }
     }, { passive: true });
+
+    // Enviar mensagem personalizada ao pedir orçamento pra eventos
+    function enviarWhatsApp() {
+      // Captura os valores dos campos pelos IDs
+      const nome = document.getElementById('nome').value;
+      const telefone = document.getElementById('telefone').value;
+      const evento = document.getElementById('tipo_evento').value;
+      const convidados = document.getElementById('convidados').value;
+      const msg = document.getElementById('mensagem').value;
+
+      // Monta a mensagem formatada
+      const texto = `Olá! Me chamo ${nome}, e gostaria de solicitar um orçamento.\n` +
+        `Telefone: ${telefone}\n` +
+        `Tipo de evento: ${evento}\n` +
+        `Número de convidados: ${convidados}\n` +
+        `Mensagem: ${msg}`;
+
+      // Codifica o texto para ser enviado via URL
+      const url = `https://wa.me/+5564999990000?text=${encodeURIComponent(texto)}`;
+
+      // Abre o WhatsApp
+      window.open(url, '_blank');
+    }
   </script>
 
 </body>
