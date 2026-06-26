@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <link rel="icon" type="image/png" href="assests/favicon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>Estância Agro Grill | Gastronomia Premium em Rio Verde-GO</title>
-  <meta name="description" content="Estância Agro Grill — O encontro perfeito entre gastronomia, tradição e o espírito do agronegócio em Rio Verde-GO. Reserve sua mesa e viva uma experiência memorável." />
-  <meta name="keywords" content="restaurante Rio Verde, churrasco premium, agronegócio, eventos corporativos, gastronomia Goiás, Estância Agro Grill" />
+  <meta name="description"
+    content="Estância Agro Grill — O encontro perfeito entre gastronomia, tradição e o espírito do agronegócio em Rio Verde-GO. Reserve sua mesa e viva uma experiência memorável." />
+  <meta name="keywords"
+    content="restaurante Rio Verde, churrasco premium, agronegócio, eventos corporativos, gastronomia Goiás, Estância Agro Grill" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://estanciaagrogrill.com.br/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant" />
   <meta property="og:title" content="Estância Agro Grill | Gastronomia Premium em Rio Verde-GO" />
-  <meta property="og:description" content="Um ambiente pensado para quem valoriza boa comida, bons negócios e grandes momentos." />
+  <meta property="og:description"
+    content="Um ambiente pensado para quem valoriza boa comida, bons negócios e grandes momentos." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200" />
   <meta property="og:url" content="https://estanciaagrogrill.com.br/" />
   <meta property="og:locale" content="pt_BR" />
@@ -60,27 +65,29 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* =============================================
        DESIGN TOKENS
     ============================================= */
     :root {
-      --orange:  #E8580A;
+      --orange: #E8580A;
       --dark-bg: #111111;
-      --orange-d:#CC4D08;
-      --dark2:   #1A1A1A;
-      --accent:  #E8580A;
-      --accent-l:#FF6A1A;
-      --white:   #FFFFFF;
-      --off:     #F5F5F0;
-      --dark:    #111111;
-      --gray:    #6B6B6B;
-      --line:    rgba(232,88,10,0.30);
+      --orange-d: #CC4D08;
+      --dark2: #1A1A1A;
+      --accent: #E8580A;
+      --accent-l: #FF6A1A;
+      --white: #FFFFFF;
+      --off: #F5F5F0;
+      --dark: #111111;
+      --gray: #6B6B6B;
+      --line: rgba(232, 88, 10, 0.30);
 
       --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'Inter', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
 
       --ease: cubic-bezier(0.4, 0, 0.2, 1);
       --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -89,7 +96,13 @@
     /* =============================================
        RESET & BASE
     ============================================= */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -104,10 +117,26 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    img { display: block; max-width: 100%; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
-    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
 
     /* =============================================
        TYPOGRAPHY
@@ -166,16 +195,18 @@
       background: var(--accent);
       color: var(--dark);
     }
+
     .btn-gold:hover {
       background: var(--accent-l);
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(232,88,10,0.35);
+      box-shadow: 0 8px 30px rgba(232, 88, 10, 0.35);
     }
 
     .btn-outline {
-      border: 1.5px solid rgba(255,255,255,0.5);
+      border: 1.5px solid rgba(255, 255, 255, 0.5);
       color: var(--white);
     }
+
     .btn-outline:hover {
       border-color: var(--accent);
       color: var(--accent);
@@ -186,10 +217,11 @@
       background: var(--orange);
       color: var(--white);
     }
+
     .btn-green:hover {
       background: var(--orange-d);
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(232,88,10,0.35);
+      box-shadow: 0 8px 30px rgba(232, 88, 10, 0.35);
     }
 
     /* Fade-in on scroll */
@@ -198,29 +230,47 @@
       transform: translateY(32px);
       transition: opacity 0.75s var(--ease-out), transform 0.75s var(--ease-out);
     }
+
     .reveal.visible {
       opacity: 1;
       transform: none;
     }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
-    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 0.5s;
+    }
 
     /* =============================================
        HEADER / NAV
     ============================================= */
     #header {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       transition: all 0.4s var(--ease);
       padding: 1.5rem 0;
     }
 
     #header.scrolled {
-      background: rgba(17,17,17,0.96);
+      background: rgba(17, 17, 17, 0.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 0.875rem 0;
@@ -239,6 +289,7 @@
       flex-direction: column;
       gap: 0.1rem;
     }
+
     .logo-mark {
       font-family: var(--font-display);
       font-size: 1.375rem;
@@ -247,7 +298,11 @@
       letter-spacing: 0.04em;
       line-height: 1;
     }
-    .logo-mark span { color: var(--accent); }
+
+    .logo-mark span {
+      color: var(--accent);
+    }
+
     .logo-sub {
       font-size: 0.5625rem;
       font-weight: 600;
@@ -263,25 +318,35 @@
       align-items: center;
       gap: 2.25rem;
     }
+
     .nav-links a {
       font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255, 255, 255, 0.75);
       position: relative;
       transition: color 0.25s;
     }
+
     .nav-links a::after {
       content: '';
       position: absolute;
-      bottom: -3px; left: 0;
-      width: 0; height: 1px;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1px;
       background: var(--accent);
       transition: width 0.3s var(--ease);
     }
-    .nav-links a:hover { color: var(--accent); }
-    .nav-links a:hover::after { width: 100%; }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
 
     .nav-cta {
       padding: 0.625rem 1.375rem;
@@ -294,6 +359,7 @@
       border-radius: 2px;
       transition: all 0.25s;
     }
+
     .nav-cta:hover {
       background: var(--accent);
       color: var(--dark);
@@ -306,9 +372,11 @@
       gap: 5px;
       padding: 4px;
     }
+
     .hamburger span {
       display: block;
-      width: 24px; height: 1.5px;
+      width: 24px;
+      height: 1.5px;
       background: var(--white);
       transition: all 0.3s;
     }
@@ -324,7 +392,11 @@
       justify-content: center;
       gap: 2rem;
     }
-    .mobile-menu.open { display: flex; }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
     .mobile-menu a {
       font-family: var(--font-display);
       font-size: 2rem;
@@ -332,10 +404,15 @@
       color: var(--white);
       transition: color 0.2s;
     }
-    .mobile-menu a:hover { color: var(--accent); }
+
+    .mobile-menu a:hover {
+      color: var(--accent);
+    }
+
     .mobile-menu-close {
       position: absolute;
-      top: 1.5rem; right: 2rem;
+      top: 1.5rem;
+      right: 2rem;
       font-size: 2rem;
       color: var(--white);
     }
@@ -361,21 +438,26 @@
       transform: scale(1.05);
       transition: transform 12s ease-out;
     }
-    .hero-bg.loaded { transform: scale(1); }
+
+    .hero-bg.loaded {
+      transform: scale(1);
+    }
 
     /* Multi-layer overlay — signature design element */
     .hero-overlay {
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(to right, rgba(17,17,17,0.88) 0%, rgba(17,17,17,0.55) 55%, rgba(17,17,17,0.2) 100%),
-        linear-gradient(to top, rgba(17,17,17,0.7) 0%, transparent 50%);
+        linear-gradient(to right, rgba(17, 17, 17, 0.88) 0%, rgba(17, 17, 17, 0.55) 55%, rgba(17, 17, 17, 0.2) 100%),
+        linear-gradient(to top, rgba(17, 17, 17, 0.7) 0%, transparent 50%);
     }
 
     /* Vertical gold accent line — brand signature */
     .hero-accent {
       position: absolute;
-      left: 0; top: 0; bottom: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
       width: 4px;
       background: linear-gradient(to bottom, transparent, var(--accent), transparent);
       opacity: 0.7;
@@ -393,10 +475,12 @@
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
+
     .hero-eyebrow::before {
       content: '';
       display: block;
-      width: 2.5rem; height: 1px;
+      width: 2.5rem;
+      height: 1px;
       background: var(--accent);
     }
 
@@ -407,21 +491,24 @@
       line-height: 1.0;
       margin-bottom: 1.25rem;
     }
-    .hero-title .brand-green { color: var(--accent); }
+
+    .hero-title .brand-green {
+      color: var(--accent);
+    }
 
     .hero-subtitle {
       font-family: var(--font-display);
       font-size: clamp(1.125rem, 2vw, 1.375rem);
       font-style: italic;
       font-weight: 400;
-      color: rgba(255,255,255,0.88);
+      color: rgba(255, 255, 255, 0.88);
       margin-bottom: 1rem;
       line-height: 1.5;
     }
 
     .hero-body {
       font-size: 1rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
       line-height: 1.75;
       max-width: 520px;
       margin-bottom: 2.5rem;
@@ -447,36 +534,57 @@
       opacity: 0.5;
       animation: bounce 2s infinite;
     }
+
     .scroll-indicator span {
       font-size: 0.5625rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--accent);
     }
+
     .scroll-mouse {
-      width: 22px; height: 34px;
+      width: 22px;
+      height: 34px;
       border: 1.5px solid var(--accent);
       border-radius: 12px;
       position: relative;
     }
+
     .scroll-mouse::after {
       content: '';
       position: absolute;
-      top: 5px; left: 50%;
+      top: 5px;
+      left: 50%;
       transform: translateX(-50%);
-      width: 3px; height: 6px;
+      width: 3px;
+      height: 6px;
       background: var(--accent);
       border-radius: 2px;
       animation: scrollDot 1.5s infinite;
     }
 
     @keyframes bounce {
-      0%,100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(6px); }
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(6px);
+      }
     }
+
     @keyframes scrollDot {
-      0% { opacity: 1; top: 5px; }
-      100% { opacity: 0; top: 18px; }
+      0% {
+        opacity: 1;
+        top: 5px;
+      }
+
+      100% {
+        opacity: 0;
+        top: 18px;
+      }
     }
 
     /* =============================================
@@ -506,30 +614,40 @@
     .sobre-img-wrap {
       position: relative;
     }
+
     .sobre-img-wrap img {
       width: 100%;
       height: 580px;
       object-fit: cover;
       border-radius: 1px;
     }
+
     /* Decorative frame offset */
     .sobre-img-wrap::before {
       content: '';
       position: absolute;
-      top: -1.25rem; left: -1.25rem;
-      right: 1.25rem; bottom: 1.25rem;
+      top: -1.25rem;
+      left: -1.25rem;
+      right: 1.25rem;
+      bottom: 1.25rem;
       border: 1.5px solid var(--line);
       border-radius: 1px;
       z-index: 0;
     }
-    .sobre-img-wrap img { position: relative; z-index: 1; }
+
+    .sobre-img-wrap img {
+      position: relative;
+      z-index: 1;
+    }
 
     /* Gold badge overlay */
     .sobre-badge {
       position: absolute;
-      bottom: -1.5rem; right: -1.5rem;
+      bottom: -1.5rem;
+      right: -1.5rem;
       z-index: 2;
-      width: 130px; height: 130px;
+      width: 130px;
+      height: 130px;
       background: var(--accent);
       border-radius: 50%;
       display: flex;
@@ -539,6 +657,7 @@
       text-align: center;
       padding: 1rem;
     }
+
     .sobre-badge .num {
       font-family: var(--font-display);
       font-size: 2rem;
@@ -546,6 +665,7 @@
       color: var(--dark);
       line-height: 1;
     }
+
     .sobre-badge .lbl {
       font-size: 0.5625rem;
       font-weight: 700;
@@ -564,7 +684,7 @@
 
     .sobre-content p {
       font-size: 1.0625rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
       line-height: 1.85;
       margin-bottom: 1.25rem;
     }
@@ -577,7 +697,7 @@
       padding-top: 2rem;
       border-top: 1px solid var(--line);
     }
-    .stat-item { }
+
     .stat-item .num {
       font-family: var(--font-display);
       font-size: 2.25rem;
@@ -585,9 +705,10 @@
       color: var(--accent);
       line-height: 1;
     }
+
     .stat-item .lbl {
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       margin-top: 0.3rem;
       letter-spacing: 0.04em;
     }
@@ -604,12 +725,16 @@
       max-width: 600px;
       margin: 0 auto 4rem;
     }
+
     .destaques-header h2 {
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
     }
-    .destaques-header .gold-line { margin: 1.25rem auto; }
+
+    .destaques-header .gold-line {
+      margin: 1.25rem auto;
+    }
 
     .destaques-grid {
       display: grid;
@@ -625,25 +750,35 @@
       overflow: hidden;
       transition: background 0.35s var(--ease);
     }
+
     .destaque-card::before {
       content: '';
       position: absolute;
-      bottom: 0; left: 0; right: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       background: var(--accent);
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.35s var(--ease);
     }
-    .destaque-card:hover { background: var(--orange); }
-    .destaque-card:hover::before { transform: scaleX(1); }
+
+    .destaque-card:hover {
+      background: var(--orange);
+    }
+
+    .destaque-card:hover::before {
+      transform: scaleX(1);
+    }
 
     .destaque-icon {
       font-size: 2rem;
       margin-bottom: 1.25rem;
       display: block;
-      filter: drop-shadow(0 2px 8px rgba(232,88,10,0.3));
+      filter: drop-shadow(0 2px 8px rgba(232, 88, 10, 0.3));
     }
+
     .destaque-card h3 {
       font-family: var(--font-display);
       font-size: 1.25rem;
@@ -651,9 +786,10 @@
       color: var(--white);
       margin-bottom: 0.625rem;
     }
+
     .destaque-card p {
       font-size: 0.9375rem;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
       line-height: 1.65;
     }
 
@@ -669,14 +805,19 @@
       max-width: 600px;
       margin: 0 auto 3rem;
     }
+
     .cardapio-header h2 {
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
     }
-    .cardapio-header .gold-line { margin: 1.25rem auto; }
+
+    .cardapio-header .gold-line {
+      margin: 1.25rem auto;
+    }
+
     .cardapio-header p {
-      color: rgba(255,255,255,0.55);
+      color: rgba(255, 255, 255, 0.55);
       font-size: 1rem;
     }
 
@@ -687,24 +828,35 @@
       margin-bottom: 3rem;
       border-bottom: 1px solid var(--line);
     }
+
     .tab-btn {
       padding: 0.75rem 1.75rem;
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255, 255, 255, 0.45);
       border-bottom: 2px solid transparent;
       margin-bottom: -1px;
       transition: all 0.25s;
     }
-    .tab-btn.active, .tab-btn:hover {
+
+    .tab-btn.active,
+    .tab-btn:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
 
-    .tab-panel { display: none; }
-    .tab-panel.active { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: var(--line); }
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5px;
+      background: var(--line);
+    }
 
     .menu-item {
       background: #0E0E0E;
@@ -714,13 +866,21 @@
       align-items: flex-start;
       transition: background 0.25s;
     }
-    .menu-item:hover { background: #161616; }
+
+    .menu-item:hover {
+      background: #161616;
+    }
+
     .menu-item-icon {
       font-size: 1.5rem;
       flex-shrink: 0;
       margin-top: 0.2rem;
     }
-    .menu-item-info { flex: 1; }
+
+    .menu-item-info {
+      flex: 1;
+    }
+
     .menu-item-info h4 {
       font-family: var(--font-display);
       font-size: 1.0625rem;
@@ -728,11 +888,13 @@
       color: var(--white);
       margin-bottom: 0.3rem;
     }
+
     .menu-item-info p {
       font-size: 0.875rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       line-height: 1.5;
     }
+
     .menu-item-price {
       font-family: var(--font-display);
       font-size: 1.125rem;
@@ -754,12 +916,16 @@
       max-width: 600px;
       margin: 0 auto 3rem;
     }
+
     .galeria-header h2 {
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
     }
-    .galeria-header .gold-line { margin: 1.25rem auto; }
+
+    .galeria-header .gold-line {
+      margin: 1.25rem auto;
+    }
 
     .galeria-grid {
       display: grid;
@@ -773,14 +939,40 @@
       position: relative;
       cursor: pointer;
     }
-    .gal-item:nth-child(1) { grid-column: span 5; grid-row: span 2; }
-    .gal-item:nth-child(2) { grid-column: span 4; }
-    .gal-item:nth-child(3) { grid-column: span 3; }
-    .gal-item:nth-child(4) { grid-column: span 4; }
-    .gal-item:nth-child(5) { grid-column: span 3; }
-    .gal-item:nth-child(6) { grid-column: span 4; grid-row: span 2; }
-    .gal-item:nth-child(7) { grid-column: span 4; }
-    .gal-item:nth-child(8) { grid-column: span 4; }
+
+    .gal-item:nth-child(1) {
+      grid-column: span 5;
+      grid-row: span 2;
+    }
+
+    .gal-item:nth-child(2) {
+      grid-column: span 4;
+    }
+
+    .gal-item:nth-child(3) {
+      grid-column: span 3;
+    }
+
+    .gal-item:nth-child(4) {
+      grid-column: span 4;
+    }
+
+    .gal-item:nth-child(5) {
+      grid-column: span 3;
+    }
+
+    .gal-item:nth-child(6) {
+      grid-column: span 4;
+      grid-row: span 2;
+    }
+
+    .gal-item:nth-child(7) {
+      grid-column: span 4;
+    }
+
+    .gal-item:nth-child(8) {
+      grid-column: span 4;
+    }
 
     .gal-item img {
       width: 100%;
@@ -789,23 +981,30 @@
       object-fit: cover;
       transition: transform 0.6s var(--ease);
     }
-    .gal-item:hover img { transform: scale(1.06); }
+
+    .gal-item:hover img {
+      transform: scale(1.06);
+    }
 
     .gal-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.75);
+      background: rgba(0, 0, 0, 0.75);
       opacity: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: opacity 0.35s;
     }
+
     .gal-overlay span {
       font-size: 1.75rem;
       color: var(--white);
     }
-    .gal-item:hover .gal-overlay { opacity: 1; }
+
+    .gal-item:hover .gal-overlay {
+      opacity: 1;
+    }
 
     /* Lightbox */
     .lightbox {
@@ -813,27 +1012,36 @@
       position: fixed;
       inset: 0;
       z-index: 200;
-      background: rgba(0,0,0,0.95);
+      background: rgba(0, 0, 0, 0.95);
       align-items: center;
       justify-content: center;
     }
-    .lightbox.open { display: flex; }
+
+    .lightbox.open {
+      display: flex;
+    }
+
     .lightbox img {
       max-width: 90vw;
       max-height: 88vh;
       object-fit: contain;
       border-radius: 1px;
     }
+
     .lightbox-close {
       position: absolute;
-      top: 1.5rem; right: 2rem;
+      top: 1.5rem;
+      right: 2rem;
       font-size: 2rem;
       color: var(--white);
       cursor: pointer;
       opacity: 0.7;
       transition: opacity 0.2s;
     }
-    .lightbox-close:hover { opacity: 1; }
+
+    .lightbox-close:hover {
+      opacity: 1;
+    }
 
     /* =============================================
        EVENTOS
@@ -851,10 +1059,11 @@
       background-position: center;
       background-attachment: fixed;
     }
+
     .eventos-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(17,17,17,0.93) 0%, rgba(10,10,10,0.85) 100%);
+      background: linear-gradient(135deg, rgba(17, 17, 17, 0.93) 0%, rgba(10, 10, 10, 0.85) 100%);
     }
 
     .eventos-inner {
@@ -872,9 +1081,10 @@
       color: var(--white);
       margin-bottom: 1.25rem;
     }
+
     .eventos-content p {
       font-size: 1.0625rem;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
       line-height: 1.8;
       margin-bottom: 2rem;
     }
@@ -884,6 +1094,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
+
     .eventos-type {
       display: flex;
       align-items: center;
@@ -892,17 +1103,21 @@
       border: 1px solid var(--line);
       border-radius: 2px;
       font-size: 0.875rem;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255, 255, 255, 0.75);
     }
-    .eventos-type span { font-size: 1.125rem; }
+
+    .eventos-type span {
+      font-size: 1.125rem;
+    }
 
     .eventos-form-card {
-      background: rgba(17,17,17,0.85);
+      background: rgba(17, 17, 17, 0.85);
       backdrop-filter: blur(16px);
       border: 1px solid var(--line);
       padding: 2.5rem;
       border-radius: 2px;
     }
+
     .eventos-form-card h3 {
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -910,39 +1125,50 @@
       color: var(--white);
       margin-bottom: 1.5rem;
     }
+
     .form-group {
       margin-bottom: 1rem;
     }
+
     .form-group label {
       display: block;
       font-size: 0.6875rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       margin-bottom: 0.4rem;
     }
+
     .form-group input,
     .form-group select,
     .form-group textarea {
       width: 100%;
       padding: 0.75rem 1rem;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 2px;
       color: var(--white);
       font-family: var(--font-body);
       font-size: 0.9375rem;
       transition: border-color 0.25s;
     }
+
     .form-group input:focus,
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
       border-color: var(--accent);
     }
-    .form-group select option { background: var(--dark); }
-    .form-group textarea { resize: vertical; min-height: 80px; }
+
+    .form-group select option {
+      background: var(--dark);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
 
     /* =============================================
        DEPOIMENTOS
@@ -956,17 +1182,22 @@
       max-width: 600px;
       margin: 0 auto 3.5rem;
     }
+
     .depoimentos-header h2 {
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
     }
-    .depoimentos-header .gold-line { margin: 1.25rem auto; }
+
+    .depoimentos-header .gold-line {
+      margin: 1.25rem auto;
+    }
 
     .carousel-track-wrap {
       overflow: hidden;
       position: relative;
     }
+
     .carousel-track {
       display: flex;
       gap: 1.5rem;
@@ -974,7 +1205,7 @@
     }
 
     .depoimento-card {
-	  display: flex;
+      display: flex;
       flex-direction: column;
       flex: 0 0 calc(33.333% - 1rem);
       background: #141414;
@@ -983,10 +1214,12 @@
       border-radius: 2px;
       position: relative;
     }
+
     .depoimento-card::before {
       content: '"';
       position: absolute;
-      top: -0.5rem; left: 1.5rem;
+      top: -0.5rem;
+      left: 1.5rem;
       font-family: var(--font-display);
       font-size: 5rem;
       color: var(--accent);
@@ -1000,33 +1233,39 @@
       letter-spacing: 0.1em;
       margin-bottom: 1rem;
     }
+
     .dep-text {
       font-size: 0.9375rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
       line-height: 1.75;
       margin-bottom: 1.5rem;
       font-style: italic;
     }
+
     .dep-author {
       display: flex;
       align-items: center;
       gap: 0.875rem;
-	  margin-top: auto;
+      margin-top: auto;
     }
+
     .dep-avatar {
-      width: 44px; height: 44px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid var(--line);
     }
+
     .dep-name {
       font-weight: 600;
       font-size: 0.875rem;
       color: var(--white);
     }
+
     .dep-role {
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.4);
+      color: rgba(255, 255, 255, 0.4);
     }
 
     .carousel-controls {
@@ -1035,26 +1274,32 @@
       gap: 0.75rem;
       margin-top: 2rem;
     }
+
     .carousel-dot {
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.2);
       transition: all 0.3s;
       cursor: pointer;
     }
+
     .carousel-dot.active {
       background: var(--accent);
       width: 24px;
       border-radius: 3px;
     }
+
     .carousel-btn-wrap {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin-top: 1.5rem;
     }
+
     .carousel-btn {
-      width: 44px; height: 44px;
+      width: 44px;
+      height: 44px;
       border: 1.5px solid var(--line);
       border-radius: 50%;
       display: flex;
@@ -1064,6 +1309,7 @@
       font-size: 1rem;
       transition: all 0.25s;
     }
+
     .carousel-btn:hover {
       background: var(--accent);
       color: var(--dark);
@@ -1082,12 +1328,16 @@
       max-width: 600px;
       margin: 0 auto 3.5rem;
     }
+
     .dif-header h2 {
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
     }
-    .dif-header .gold-line { margin: 1.25rem auto; }
+
+    .dif-header .gold-line {
+      margin: 1.25rem auto;
+    }
 
     .dif-grid {
       display: grid;
@@ -1095,14 +1345,23 @@
       gap: 1.5px;
       background: var(--line);
     }
+
     .dif-item {
       background: #141414;
       padding: 2rem 1.75rem;
       text-align: center;
       transition: background 0.3s;
     }
-    .dif-item:hover { background: var(--orange); }
-    .dif-item .icon { font-size: 2rem; margin-bottom: 0.875rem; }
+
+    .dif-item:hover {
+      background: var(--orange);
+    }
+
+    .dif-item .icon {
+      font-size: 2rem;
+      margin-bottom: 0.875rem;
+    }
+
     .dif-item h4 {
       font-size: 0.875rem;
       font-weight: 600;
@@ -1129,7 +1388,10 @@
       color: var(--white);
       margin-bottom: 0.5rem;
     }
-    .loc-content .gold-line { margin: 1.25rem 0; }
+
+    .loc-content .gold-line {
+      margin: 1.25rem 0;
+    }
 
     .loc-info {
       display: flex;
@@ -1137,16 +1399,19 @@
       gap: 1.25rem;
       margin-bottom: 2rem;
     }
+
     .loc-info-row {
       display: flex;
       gap: 1rem;
       align-items: flex-start;
     }
+
     .loc-info-icon {
       font-size: 1.25rem;
       flex-shrink: 0;
       margin-top: 0.1rem;
     }
+
     .loc-info-text strong {
       display: block;
       font-size: 0.75rem;
@@ -1156,9 +1421,10 @@
       color: var(--accent);
       margin-bottom: 0.2rem;
     }
+
     .loc-info-text span {
       font-size: 0.9375rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
     }
 
     .loc-actions {
@@ -1173,9 +1439,10 @@
       border: 1px solid var(--line);
       min-height: 100%;
     }
+
     .loc-map iframe {
       display: block;
-	  width: 100%;
+      width: 100%;
       height: 100%;
       min-height: 300px;
       border: none;
@@ -1198,10 +1465,11 @@
       background-size: cover;
       background-position: center;
     }
+
     .cta-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(17,17,17,0.88), rgba(17,17,17,0.82));
+      background: linear-gradient(to bottom, rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.82));
     }
 
     .cta-inner {
@@ -1210,19 +1478,25 @@
       max-width: 700px;
       margin: 0 auto;
     }
+
     .cta-inner h2 {
       font-size: clamp(2.25rem, 5vw, 3.5rem);
       font-weight: 900;
       color: var(--white);
       margin-bottom: 1rem;
     }
-    .cta-inner .gold-line { margin: 1.25rem auto; }
+
+    .cta-inner .gold-line {
+      margin: 1.25rem auto;
+    }
+
     .cta-inner p {
       font-size: 1.125rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
       margin-bottom: 2.5rem;
       line-height: 1.75;
     }
+
     .cta-actions {
       display: flex;
       gap: 1rem;
@@ -1246,10 +1520,13 @@
       padding-bottom: 3rem;
     }
 
-    .footer-brand .logo-mark { font-size: 1.5rem; }
+    .footer-brand .logo-mark {
+      font-size: 1.5rem;
+    }
+
     .footer-brand p {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255, 255, 255, 0.45);
       line-height: 1.75;
       margin: 1rem 0 1.5rem;
       max-width: 260px;
@@ -1259,17 +1536,20 @@
       display: flex;
       gap: 0.75rem;
     }
+
     .social-link {
-      width: 38px; height: 38px;
+      width: 38px;
+      height: 38px;
       border: 1px solid var(--line);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       transition: all 0.25s;
     }
+
     .social-link:hover {
       border-color: var(--accent);
       color: var(--accent);
@@ -1284,18 +1564,24 @@
       color: var(--accent);
       margin-bottom: 1.25rem;
     }
+
     .footer-col ul li {
       margin-bottom: 0.625rem;
     }
-    .footer-col ul li a, .footer-col ul li span {
+
+    .footer-col ul li a,
+    .footer-col ul li span {
       font-size: 0.875rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       transition: color 0.2s;
     }
-    .footer-col ul li a:hover { color: var(--white); }
+
+    .footer-col ul li a:hover {
+      color: var(--white);
+    }
 
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.06);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
       padding: 1.5rem 0;
       display: flex;
       justify-content: space-between;
@@ -1303,17 +1589,22 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
+
     .footer-bottom p {
       font-size: 0.8125rem;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.3);
     }
+
     .footer-bottom a {
       color: var(--accent);
       font-size: 0.8125rem;
       opacity: 0.7;
       transition: opacity 0.2s;
     }
-    .footer-bottom a:hover { opacity: 1; }
+
+    .footer-bottom a:hover {
+      opacity: 1;
+    }
 
     /* WhatsApp float */
     .whatsapp-float {
@@ -1321,55 +1612,101 @@
       bottom: 2rem;
       right: 2rem;
       z-index: 90;
-      width: 56px; height: 56px;
+      width: 56px;
+      height: 56px;
       background: #25D366;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.625rem;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
       transition: transform 0.25s, box-shadow 0.25s;
       animation: pulse-green 2s infinite;
     }
+
     .whatsapp-float:hover {
       transform: scale(1.1);
-      box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
     }
+
     @keyframes pulse-green {
-      0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
-      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.65); }
+
+      0%,
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.65);
+      }
     }
 
     /* =============================================
        RESPONSIVE
     ============================================= */
     @media (max-width: 1024px) {
-      .nav-links { display: none; }
-      .hamburger { display: none; }
-      .nav-cta { display: inline-flex; }
+      .nav-links {
+        display: none;
+      }
 
-      .sobre-grid { grid-template-columns: 1fr; }
-      .sobre-img-wrap { order: -1; }
-      .sobre-img-wrap img { height: 380px; }
-      .sobre-badge { width: 100px; height: 100px; }
-      .sobre-badge .num { font-size: 1.5rem; }
+      .hamburger {
+        display: none;
+      }
 
-      .destaques-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-cta {
+        display: inline-flex;
+      }
 
-      .tab-panel.active { grid-template-columns: 1fr; }
+      .sobre-grid {
+        grid-template-columns: 1fr;
+      }
 
-      .eventos-inner { grid-template-columns: 1fr; }
+      .sobre-img-wrap {
+        order: -1;
+      }
 
-      .dif-grid { grid-template-columns: repeat(2, 1fr); }
+      .sobre-img-wrap img {
+        height: 380px;
+      }
 
-      .loc-grid { grid-template-columns: 1fr; }
+      .sobre-badge {
+        width: 100px;
+        height: 100px;
+      }
 
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .sobre-badge .num {
+        font-size: 1.5rem;
+      }
+
+      .destaques-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tab-panel.active {
+        grid-template-columns: 1fr;
+      }
+
+      .eventos-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .dif-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .loc-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
 
       .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .gal-item:nth-child(n) {
         grid-column: span 1 !important;
         grid-row: span 1 !important;
@@ -1377,29 +1714,107 @@
     }
 
     @media (max-width: 768px) {
-      .section-pad { padding: 4.5rem 0; }
-      .destaques-grid { grid-template-columns: 1fr; }
-      .dif-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-grid { grid-template-columns: 1fr; }
-      .sobre-stats { grid-template-columns: repeat(3, 1fr); }
-      .depoimento-card { flex: 0 0 calc(100% - 0rem); }
-      .cardapio-tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 0; }
-      .cardapio-tabs::-webkit-scrollbar { display: none; }
-      .tab-btn { flex-shrink: 0; white-space: nowrap; }
-      .hero-actions { flex-direction: column; align-items: stretch; }
-      .hero-actions .btn { padding: 0.875rem 1.375rem; font-size: 0.8125rem; text-align: center; justify-content: center; width: 100%; }
-      .loc-actions { flex-direction: column; }
-      .loc-actions .btn { width: 100%; justify-content: center; text-align: center; }
-      .loc-map { margin-top: 1.5rem; min-height: 260px; }
-      .footer-socials { margin-top: 0.5rem; }
-      .cta-actions { flex-direction: column; align-items: center; }
-      .cta-actions .btn { width: 100%; max-width: 320px; justify-content: center; text-align: center; padding: 1rem 2rem !important; font-size: 0.875rem !important; }
+      .section-pad {
+        padding: 4.5rem 0;
+      }
+
+      .destaques-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dif-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sobre-stats {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .depoimento-card {
+        flex: 0 0 calc(100% - 0rem);
+      }
+
+      .cardapio-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 0;
+      }
+
+      .cardapio-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tab-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        padding: 0.875rem 1.375rem;
+        font-size: 0.8125rem;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .loc-actions {
+        flex-direction: column;
+      }
+
+      .loc-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loc-map {
+        margin-top: 1.5rem;
+        min-height: 260px;
+      }
+
+      .footer-socials {
+        margin-top: 0.5rem;
+      }
+
+      .cta-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-actions .btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 2rem !important;
+        font-size: 0.875rem !important;
+      }
     }
 
     @media (max-width: 480px) {
-      .container { padding: 0 1.25rem; }
-      .hero-title { font-size: 2.5rem; }
-      .dif-grid { grid-template-columns: repeat(2, 1fr); }
+      .container {
+        padding: 0 1.25rem;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .dif-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     /* =============================================
@@ -1417,10 +1832,12 @@
       gap: 1.5rem;
       transition: opacity 0.6s, visibility 0.6s;
     }
+
     #loading.hide {
       opacity: 0;
       visibility: hidden;
     }
+
     .loading-logo {
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -1428,13 +1845,19 @@
       color: var(--white);
       letter-spacing: 0.04em;
     }
-    .loading-logo span { color: var(--accent); }
+
+    .loading-logo span {
+      color: var(--accent);
+    }
+
     .loading-bar-wrap {
-      width: 160px; height: 2px;
-      background: rgba(255,255,255,0.1);
+      width: 160px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 1px;
       overflow: hidden;
     }
+
     .loading-bar {
       height: 100%;
       background: var(--accent);
@@ -1450,12 +1873,15 @@
   <!-- Loading Screen -->
   <div id="loading">
     <div class="loading-logo">ESTÂNCIA <span>AGRO GRILL</span></div>
-    <div class="loading-bar-wrap"><div class="loading-bar" id="loadBar"></div></div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar" id="loadBar"></div>
+    </div>
     <div class="eyebrow">Preparando sua experiência…</div>
   </div>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20na%20Estância%20Agro%20Grill." target="_blank" class="whatsapp-float" aria-label="WhatsApp">📱</a>
+  <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20na%20Estância%20Agro%20Grill."
+    target="_blank" class="whatsapp-float" aria-label="WhatsApp">📱</a>
 
   <!-- ============ HEADER ============ -->
   <header id="header">
@@ -1538,11 +1964,8 @@
     <div class="container">
       <div class="sobre-grid">
         <div class="sobre-img-wrap reveal">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
-            alt="Interior do Estância Agro Grill"
-            loading="lazy"
-          />
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+            alt="Interior do Estância Agro Grill" loading="lazy" />
           <div class="sobre-badge">
             <div class="num">+6</div>
             <div class="lbl">Anos de história</div>
@@ -1554,10 +1977,13 @@
           <span class="gold-line reveal reveal-delay-1"></span>
           <h2 class="display reveal reveal-delay-2">Tradição que<br>se serve no prato.</h2>
           <p class="reveal reveal-delay-3">
-            A Estância Agro Grill nasceu com a proposta de oferecer uma experiência gastronômica diferenciada para Rio Verde e região. Inspirada nos valores do agronegócio brasileiro, combina tradição, hospitalidade e excelência em cada detalhe.
+            A Estância Agro Grill nasceu com a proposta de oferecer uma experiência gastronômica diferenciada para Rio
+            Verde e região. Inspirada nos valores do agronegócio brasileiro, combina tradição, hospitalidade e
+            excelência em cada detalhe.
           </p>
           <p class="reveal reveal-delay-4">
-            Mais do que um restaurante, somos um espaço de encontros, celebrações e experiências memoráveis — onde o campo encontra a sofisticação e cada refeição conta uma história.
+            Mais do que um restaurante, somos um espaço de encontros, celebrações e experiências memoráveis — onde o
+            campo encontra a sofisticação e cada refeição conta uma história.
           </p>
 
           <div class="sobre-stats reveal reveal-delay-5">
@@ -1599,7 +2025,8 @@
         <div class="destaque-card reveal reveal-delay-1">
           <span class="destaque-icon">🍹</span>
           <h3>Drinks Autorais</h3>
-          <p>Coquetéis exclusivos desenvolvidos pelo nosso bartender, com ingredientes premium e apresentação impecável.</p>
+          <p>Coquetéis exclusivos desenvolvidos pelo nosso bartender, com ingredientes premium e apresentação impecável.
+          </p>
         </div>
         <div class="destaque-card reveal reveal-delay-2">
           <span class="destaque-icon">👨‍👩‍👧</span>
@@ -1619,7 +2046,8 @@
         <div class="destaque-card reveal reveal-delay-5">
           <span class="destaque-icon">⭐</span>
           <h3>Atendimento Diferenciado</h3>
-          <p>Equipe treinada para oferecer uma experiência personalizada, focada na excelência e no bem-estar de cada cliente.</p>
+          <p>Equipe treinada para oferecer uma experiência personalizada, focada na excelência e no bem-estar de cada
+            cliente.</p>
         </div>
       </div>
     </div>
@@ -1647,48 +2075,178 @@
 
       <!-- Carnes -->
       <div class="tab-panel active" id="tab-carnes">
-        <div class="menu-item"><span class="menu-item-icon">🔥</span><div class="menu-item-info"><h4>Picanha Angus</h4><p>Peça inteira grelhada na brasa, acompanha farofa artesanal e vinagrete</p></div><span class="menu-item-price">R$ 189</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🥩</span><div class="menu-item-info"><h4>Tomahawk Premium</h4><p>Corte especial com osso, dry-aged 45 dias, para 2 pessoas</p></div><span class="menu-item-price">R$ 298</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍖</span><div class="menu-item-info"><h4>Costela Agro Grill</h4><p>Costela bovina assada 12h em baixa temperatura, desmanchando</p></div><span class="menu-item-price">R$ 145</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🥓</span><div class="menu-item-info"><h4>Entrecôte Black Angus</h4><p>Selado em alta temperatura, molho chimichurri da casa</p></div><span class="menu-item-price">R$ 158</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🔥</span><div class="menu-item-info"><h4>Medalhão de Filé Mignon</h4><p>Dois medalhões ao ponto com manteiga de ervas e purê trufado</p></div><span class="menu-item-price">R$ 172</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍖</span><div class="menu-item-info"><h4>Short Rib Confitado</h4><p>Costela de boi confitada, glacê de mel e especiarias, para dividir</p></div><span class="menu-item-price">R$ 210</span></div>
+        <div class="menu-item"><span class="menu-item-icon">🔥</span>
+          <div class="menu-item-info">
+            <h4>Picanha Angus</h4>
+            <p>Peça inteira grelhada na brasa, acompanha farofa artesanal e vinagrete</p>
+          </div><span class="menu-item-price">R$ 189</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🥩</span>
+          <div class="menu-item-info">
+            <h4>Tomahawk Premium</h4>
+            <p>Corte especial com osso, dry-aged 45 dias, para 2 pessoas</p>
+          </div><span class="menu-item-price">R$ 298</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍖</span>
+          <div class="menu-item-info">
+            <h4>Costela Agro Grill</h4>
+            <p>Costela bovina assada 12h em baixa temperatura, desmanchando</p>
+          </div><span class="menu-item-price">R$ 145</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🥓</span>
+          <div class="menu-item-info">
+            <h4>Entrecôte Black Angus</h4>
+            <p>Selado em alta temperatura, molho chimichurri da casa</p>
+          </div><span class="menu-item-price">R$ 158</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🔥</span>
+          <div class="menu-item-info">
+            <h4>Medalhão de Filé Mignon</h4>
+            <p>Dois medalhões ao ponto com manteiga de ervas e purê trufado</p>
+          </div><span class="menu-item-price">R$ 172</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍖</span>
+          <div class="menu-item-info">
+            <h4>Short Rib Confitado</h4>
+            <p>Costela de boi confitada, glacê de mel e especiarias, para dividir</p>
+          </div><span class="menu-item-price">R$ 210</span>
+        </div>
       </div>
 
       <!-- Porções -->
       <div class="tab-panel" id="tab-porcoes">
-        <div class="menu-item"><span class="menu-item-icon">🍟</span><div class="menu-item-info"><h4>Batata Frita Artesanal</h4><p>Frita na hora com flor de sal e alecrim fresco</p></div><span class="menu-item-price">R$ 38</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🧀</span><div class="menu-item-info"><h4>Queijo Coalho Grelhado</h4><p>No carvão com melaço de cana e orégano</p></div><span class="menu-item-price">R$ 44</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🐟</span><div class="menu-item-info"><h4>Camarão Empanado</h4><p>12 unidades com maionese de alho defumado</p></div><span class="menu-item-price">R$ 68</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🥗</span><div class="menu-item-info"><h4>Salada Caesar Premium</h4><p>Alface romana, croutons artesanais, molho clássico e parmesão</p></div><span class="menu-item-price">R$ 46</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🌽</span><div class="menu-item-info"><h4>Pamonha de Queijo Grelhada</h4><p>Receita goiana, grelhada na manteiga de garrafa</p></div><span class="menu-item-price">R$ 28</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍗</span><div class="menu-item-info"><h4>Frango Caipira Assado</h4><p>Frango inteiro assado lentamente, ervas da horta, para 2</p></div><span class="menu-item-price">R$ 98</span></div>
+        <div class="menu-item"><span class="menu-item-icon">🍟</span>
+          <div class="menu-item-info">
+            <h4>Batata Frita Artesanal</h4>
+            <p>Frita na hora com flor de sal e alecrim fresco</p>
+          </div><span class="menu-item-price">R$ 38</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🧀</span>
+          <div class="menu-item-info">
+            <h4>Queijo Coalho Grelhado</h4>
+            <p>No carvão com melaço de cana e orégano</p>
+          </div><span class="menu-item-price">R$ 44</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🐟</span>
+          <div class="menu-item-info">
+            <h4>Camarão Empanado</h4>
+            <p>12 unidades com maionese de alho defumado</p>
+          </div><span class="menu-item-price">R$ 68</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🥗</span>
+          <div class="menu-item-info">
+            <h4>Salada Caesar Premium</h4>
+            <p>Alface romana, croutons artesanais, molho clássico e parmesão</p>
+          </div><span class="menu-item-price">R$ 46</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🌽</span>
+          <div class="menu-item-info">
+            <h4>Pamonha de Queijo Grelhada</h4>
+            <p>Receita goiana, grelhada na manteiga de garrafa</p>
+          </div><span class="menu-item-price">R$ 28</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍗</span>
+          <div class="menu-item-info">
+            <h4>Frango Caipira Assado</h4>
+            <p>Frango inteiro assado lentamente, ervas da horta, para 2</p>
+          </div><span class="menu-item-price">R$ 98</span>
+        </div>
       </div>
 
       <!-- Drinks -->
       <div class="tab-panel" id="tab-drinks">
-        <div class="menu-item"><span class="menu-item-icon">🌿</span><div class="menu-item-info"><h4>Caipirinha da Estância</h4><p>Cachaça artesanal envelhecida, limão-siciliano, gengibre e mel</p></div><span class="menu-item-price">R$ 28</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍸</span><div class="menu-item-info"><h4>Agro Negroni</h4><p>Gin premium, vermouth rosso, Campari, laranja desidratada</p></div><span class="menu-item-price">R$ 34</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🌅</span><div class="menu-item-info"><h4>Campo Verde</h4><p>Vodka, pepino, limão, água com gás, hortelã fresca — refrescante</p></div><span class="menu-item-price">R$ 29</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍹</span><div class="menu-item-info"><h4>Sunset Goiano</h4><p>Rum, maracujá, cardamomo, xarope de baunilha e espuma de coco</p></div><span class="menu-item-price">R$ 31</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🥃</span><div class="menu-item-info"><h4>Old Fashioned Bruto</h4><p>Bourbon, açúcar mascavo, bitters, laranja flambada</p></div><span class="menu-item-price">R$ 36</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍵</span><div class="menu-item-info"><h4>Spritz do Cerrado</h4><p>Aperol, vinho rosé goiano, água com gás, laranja e erva-doce</p></div><span class="menu-item-price">R$ 26</span></div>
+        <div class="menu-item"><span class="menu-item-icon">🌿</span>
+          <div class="menu-item-info">
+            <h4>Caipirinha da Estância</h4>
+            <p>Cachaça artesanal envelhecida, limão-siciliano, gengibre e mel</p>
+          </div><span class="menu-item-price">R$ 28</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍸</span>
+          <div class="menu-item-info">
+            <h4>Agro Negroni</h4>
+            <p>Gin premium, vermouth rosso, Campari, laranja desidratada</p>
+          </div><span class="menu-item-price">R$ 34</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🌅</span>
+          <div class="menu-item-info">
+            <h4>Campo Verde</h4>
+            <p>Vodka, pepino, limão, água com gás, hortelã fresca — refrescante</p>
+          </div><span class="menu-item-price">R$ 29</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍹</span>
+          <div class="menu-item-info">
+            <h4>Sunset Goiano</h4>
+            <p>Rum, maracujá, cardamomo, xarope de baunilha e espuma de coco</p>
+          </div><span class="menu-item-price">R$ 31</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🥃</span>
+          <div class="menu-item-info">
+            <h4>Old Fashioned Bruto</h4>
+            <p>Bourbon, açúcar mascavo, bitters, laranja flambada</p>
+          </div><span class="menu-item-price">R$ 36</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍵</span>
+          <div class="menu-item-info">
+            <h4>Spritz do Cerrado</h4>
+            <p>Aperol, vinho rosé goiano, água com gás, laranja e erva-doce</p>
+          </div><span class="menu-item-price">R$ 26</span>
+        </div>
       </div>
 
       <!-- Sobremesas -->
       <div class="tab-panel" id="tab-sobremesas">
-        <div class="menu-item"><span class="menu-item-icon">🍫</span><div class="menu-item-info"><h4>Petit Gâteau Agro</h4><p>Chocolate 70%, sorvete de baunilha bourbon, farofa de castanha</p></div><span class="menu-item-price">R$ 38</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍮</span><div class="menu-item-info"><h4>Pudim de Queijo da Terra</h4><p>Receita artesanal com queijo minas curado, calda de goiabada</p></div><span class="menu-item-price">R$ 29</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍨</span><div class="menu-item-info"><h4>Banana Foster Flambada</h4><p>Banana-da-terra, caramelo, rum, sorvete de creme</p></div><span class="menu-item-price">R$ 34</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🥭</span><div class="menu-item-info"><h4>Mousse de Pequi</h4><p>Sabor do cerrado em sobremesa cremosa com tuile crocante</p></div><span class="menu-item-price">R$ 26</span></div>
+        <div class="menu-item"><span class="menu-item-icon">🍫</span>
+          <div class="menu-item-info">
+            <h4>Petit Gâteau Agro</h4>
+            <p>Chocolate 70%, sorvete de baunilha bourbon, farofa de castanha</p>
+          </div><span class="menu-item-price">R$ 38</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍮</span>
+          <div class="menu-item-info">
+            <h4>Pudim de Queijo da Terra</h4>
+            <p>Receita artesanal com queijo minas curado, calda de goiabada</p>
+          </div><span class="menu-item-price">R$ 29</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍨</span>
+          <div class="menu-item-info">
+            <h4>Banana Foster Flambada</h4>
+            <p>Banana-da-terra, caramelo, rum, sorvete de creme</p>
+          </div><span class="menu-item-price">R$ 34</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🥭</span>
+          <div class="menu-item-info">
+            <h4>Mousse de Pequi</h4>
+            <p>Sabor do cerrado em sobremesa cremosa com tuile crocante</p>
+          </div><span class="menu-item-price">R$ 26</span>
+        </div>
       </div>
 
       <!-- Bebidas -->
       <div class="tab-panel" id="tab-bebidas">
-        <div class="menu-item"><span class="menu-item-icon">🍾</span><div class="menu-item-info"><h4>Espumante Brut</h4><p>Garrafa 750ml — nacional ou importado, consulte a adega</p></div><span class="menu-item-price">A partir R$ 98</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍷</span><div class="menu-item-info"><h4>Vinho Tinto Reserva</h4><p>Taça 150ml — Malbec argentino ou Cabernet chileno</p></div><span class="menu-item-price">R$ 28</span></div>
-        <div class="menu-item"><span class="menu-item-icon">🍺</span><div class="menu-item-info"><h4>Cerveja Artesanal</h4><p>IPA, Amber Ale ou Stout — long neck 355ml</p></div><span class="menu-item-price">R$ 18</span></div>
-        <div class="menu-item"><span class="menu-item-icon">💧</span><div class="menu-item-info"><h4>Água com Gás Premium</h4><p>S. Pellegrino 500ml, servida gelada</p></div><span class="menu-item-price">R$ 12</span></div>
+        <div class="menu-item"><span class="menu-item-icon">🍾</span>
+          <div class="menu-item-info">
+            <h4>Espumante Brut</h4>
+            <p>Garrafa 750ml — nacional ou importado, consulte a adega</p>
+          </div><span class="menu-item-price">A partir R$ 98</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍷</span>
+          <div class="menu-item-info">
+            <h4>Vinho Tinto Reserva</h4>
+            <p>Taça 150ml — Malbec argentino ou Cabernet chileno</p>
+          </div><span class="menu-item-price">R$ 28</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">🍺</span>
+          <div class="menu-item-info">
+            <h4>Cerveja Artesanal</h4>
+            <p>IPA, Amber Ale ou Stout — long neck 355ml</p>
+          </div><span class="menu-item-price">R$ 18</span>
+        </div>
+        <div class="menu-item"><span class="menu-item-icon">💧</span>
+          <div class="menu-item-info">
+            <h4>Água com Gás Premium</h4>
+            <p>S. Pellegrino 500ml, servida gelada</p>
+          </div><span class="menu-item-price">R$ 12</span>
+        </div>
       </div>
     </div>
   </section>
@@ -1706,35 +2264,43 @@
 
       <div class="galeria-grid reveal">
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Ambiente interno" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Ambiente interno"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Churrasco premium" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Churrasco premium"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Drinks autorais" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Drinks autorais"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80" alt="Eventos" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80" alt="Eventos"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Área externa" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Área externa"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&q=80" alt="Gastronomia" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&q=80" alt="Gastronomia"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?w=600&q=80" alt="Mesa posta" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?w=600&q=80" alt="Mesa posta"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
         <div class="gal-item" data-src="https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?w=600&q=80" alt="Família" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?w=600&q=80" alt="Família"
+            loading="lazy" />
           <div class="gal-overlay"><span>🔍</span></div>
         </div>
       </div>
@@ -1744,7 +2310,7 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">✕</span>
-    <img src="" alt="Galeria" id="lightboxImg"/>
+    <img src="" alt="Galeria" id="lightboxImg" />
   </div>
 
   <div class="divider-gold"></div>
@@ -1760,7 +2326,8 @@
           <span class="gold-line reveal reveal-delay-1"></span>
           <h2 class="display reveal reveal-delay-2">Seu Evento Merece<br>um Ambiente Especial.</h2>
           <p class="reveal reveal-delay-3">
-            Recebemos confraternizações, eventos corporativos, aniversários e encontros do agronegócio com estrutura completa, atendimento personalizado e gastronomia de alto nível.
+            Recebemos confraternizações, eventos corporativos, aniversários e encontros do agronegócio com estrutura
+            completa, atendimento personalizado e gastronomia de alto nível.
           </p>
 
           <div class="eventos-types reveal reveal-delay-4">
@@ -1800,7 +2367,8 @@
             <label>Mensagem</label>
             <textarea placeholder="Detalhes do evento, data preferida…"></textarea>
           </div>
-          <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20um%20evento." target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:0.5rem">
+          <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20um%20evento."
+            target="_blank" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:0.5rem">
             💬 Enviar via WhatsApp
           </a>
         </div>
@@ -1823,7 +2391,9 @@
         <div class="carousel-track" id="carouselTrack">
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"A melhor experiência gastronômica que já tive em Rio Verde. A picanha angus simplesmente derretia na boca. O ambiente é incrível — sofisticado, mas sem perder o calor do interior goiano."</p>
+            <p class="dep-text">"A melhor experiência gastronômica que já tive em Rio Verde. A picanha angus
+              simplesmente derretia na boca. O ambiente é incrível — sofisticado, mas sem perder o calor do interior
+              goiano."</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=1" alt="Marcos Oliveira" class="dep-avatar" />
               <div>
@@ -1834,7 +2404,8 @@
           </div>
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"Fizemos nossa confraternização de fim de ano aqui e foi perfeito. Equipe extremamente atenciosa, cardápio impecável e estrutura de ponta. Com certeza voltaremos no próximo ano."</p>
+            <p class="dep-text">"Fizemos nossa confraternização de fim de ano aqui e foi perfeito. Equipe extremamente
+              atenciosa, cardápio impecável e estrutura de ponta. Com certeza voltaremos no próximo ano."</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=5" alt="Ana Beatriz Ferreira" class="dep-avatar" />
               <div>
@@ -1845,7 +2416,8 @@
           </div>
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"Vim durante a Tecnoshow e a Estância Agro Grill foi a melhor recomendação que recebi. O ambiente reflete a força do agronegócio — madeira, couro, e uma hospitalidade genuinamente goiana."</p>
+            <p class="dep-text">"Vim durante a Tecnoshow e a Estância Agro Grill foi a melhor recomendação que recebi. O
+              ambiente reflete a força do agronegócio — madeira, couro, e uma hospitalidade genuinamente goiana."</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=12" alt="Roberto Castanheira" class="dep-avatar" />
               <div>
@@ -1856,7 +2428,8 @@
           </div>
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"Levei a família para comemorar o aniversário da minha esposa e todos ficaram encantados. As crianças adoraram, minha esposa se sentiu num restaurante de capital. Nota 10 em tudo!"</p>
+            <p class="dep-text">"Levei a família para comemorar o aniversário da minha esposa e todos ficaram
+              encantados. As crianças adoraram, minha esposa se sentiu num restaurante de capital. Nota 10 em tudo!"</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=20" alt="Guilherme Rocha" class="dep-avatar" />
               <div>
@@ -1867,7 +2440,8 @@
           </div>
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"Os drinks são uma obra de arte. O 'Campo Verde' virou meu favorito. E o atendimento é diferenciado de verdade — você se sente especial desde o momento em que chega."</p>
+            <p class="dep-text">"Os drinks são uma obra de arte. O 'Campo Verde' virou meu favorito. E o atendimento é
+              diferenciado de verdade — você se sente especial desde o momento em que chega."</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=25" alt="Camila Diniz" class="dep-avatar" />
               <div>
@@ -1878,7 +2452,8 @@
           </div>
           <div class="depoimento-card">
             <div class="dep-stars">★★★★★</div>
-            <p class="dep-text">"Realizamos um jantar de fechamento de safra com nossos sócios e o Estância Agro Grill superou todas as expectativas. Local perfeito para quem vive o agronegócio e valoriza a qualidade."</p>
+            <p class="dep-text">"Realizamos um jantar de fechamento de safra com nossos sócios e o Estância Agro Grill
+              superou todas as expectativas. Local perfeito para quem vive o agronegócio e valoriza a qualidade."</p>
             <div class="dep-author">
               <img src="https://i.pravatar.cc/44?img=33" alt="Fernanda Moura" class="dep-avatar" />
               <div>
@@ -1910,14 +2485,38 @@
       </div>
 
       <div class="dif-grid">
-        <div class="dif-item reveal"><div class="icon">❄️</div><h4>Ambiente Climatizado</h4></div>
-        <div class="dif-item reveal reveal-delay-1"><div class="icon">👨‍👩‍👧</div><h4>Espaço Familiar Com Brinquedoteca</h4></div>
-        <div class="dif-item reveal reveal-delay-2"><div class="icon">🚗</div><h4>Estacionamento</h4></div>
-        <div class="dif-item reveal reveal-delay-3"><div class="icon">📶</div><h4>Wi-Fi de Alta Velocidade</h4></div>
-        <div class="dif-item reveal"><div class="icon">🎪</div><h4>Área para Eventos</h4></div>
-        <div class="dif-item reveal reveal-delay-1"><div class="icon">⭐</div><h4>Atendimento Personalizado</h4></div>
-        <div class="dif-item reveal reveal-delay-2"><div class="icon">📍</div><h4>Localização Estratégica</h4></div>
-        <div class="dif-item reveal reveal-delay-3"><div class="icon">🌿</div><h4>Ambiente Premium</h4></div>
+        <div class="dif-item reveal">
+          <div class="icon">❄️</div>
+          <h4>Ambiente Climatizado</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-1">
+          <div class="icon">👨‍👩‍👧</div>
+          <h4>Espaço Familiar Com Brinquedoteca</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-2">
+          <div class="icon">🚗</div>
+          <h4>Estacionamento</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-3">
+          <div class="icon">📶</div>
+          <h4>Wi-Fi de Alta Velocidade</h4>
+        </div>
+        <div class="dif-item reveal">
+          <div class="icon">🎪</div>
+          <h4>Área para Eventos</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-1">
+          <div class="icon">⭐</div>
+          <h4>Atendimento Personalizado</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-2">
+          <div class="icon">📍</div>
+          <h4>Localização Estratégica</h4>
+        </div>
+        <div class="dif-item reveal reveal-delay-3">
+          <div class="icon">🌿</div>
+          <h4>Ambiente Premium</h4>
+        </div>
       </div>
     </div>
   </section>
@@ -1930,7 +2529,8 @@
       <div class="loc-grid">
         <div class="loc-content">
           <span class="eyebrow reveal">Onde estamos</span>
-          <h2 class="display reveal reveal-delay-1">Estamos em<br><span style="color:var(--accent)">Rio Verde-GO</span></h2>
+          <h2 class="display reveal reveal-delay-1">Estamos em<br><span style="color:var(--accent)">Rio Verde-GO</span>
+          </h2>
           <span class="gold-line reveal reveal-delay-2"></span>
 
           <div class="loc-info reveal reveal-delay-3">
@@ -1953,8 +2553,8 @@
               <div class="loc-info-text">
                 <strong>Telefone / WhatsApp</strong>
                 <a href="https://wa.me/+5564999990000/" target="_blank" rel="noopener noreferrer">
-				(64) 9 9999-0000
-				</a>
+                  (64) 9 9999-0000
+                </a>
               </div>
             </div>
             <div class="loc-info-row">
@@ -1969,9 +2569,10 @@
           </div>
 
           <div class="loc-actions reveal reveal-delay-4">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Estancia+Agro+Grill+Rio+Verde" target="_blank" class="btn btn-gold">
-			📍 Como Chegar
-			</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Estancia+Agro+Grill+Rio+Verde" target="_blank"
+              class="btn btn-gold">
+              📍 Como Chegar
+            </a>
             <a href="https://wa.me/5564999990000" target="_blank" class="btn btn-green">💬 WhatsApp</a>
           </div>
         </div>
@@ -1979,11 +2580,8 @@
         <div class="loc-map reveal reveal-delay-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.218966069503!2d-50.9400091!3d-17.8172593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9361ddc06193eb49%3A0x780fade591bb5897!2sEst%C3%A2ncia%20Agro%20Grill%20Bar%20%26%20Restaurante!5e1!3m2!1spt-BR!2sbr!4v1782356029213!5m2!1spt-BR!2sbr"
-            allowfullscreen=""
-            loading="lazy"
-            title="Localização Estância Agro Grill"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            allowfullscreen="" loading="lazy" title="Localização Estância Agro Grill"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -2005,7 +2603,8 @@
           Venha viver o melhor do agronegócio e da gastronomia em Rio Verde.
         </p>
         <div class="cta-actions reveal reveal-delay-4">
-          <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" class="btn btn-gold" style="font-size:0.875rem;padding:1rem 2.5rem">🍽 Fazer Reserva</a>
+          <a href="https://wa.me/5564999990000?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank"
+            class="btn btn-gold" style="font-size:0.875rem;padding:1rem 2.5rem">🍽 Fazer Reserva</a>
           <a href="tel:+5564999990000" class="btn btn-outline">📞 Ligar Agora</a>
         </div>
       </div>
@@ -2066,12 +2665,12 @@
           </ul>
         </div>
       </div>
-      </div>
+    </div>
 
-      <div class="footer-bottom">
-        <p>© 2025 Estância Agro Grill. Todos os direitos reservados.</p>
-        <a href="#">Desenvolvido por ChupaBalaHalls</a>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2025 Estância Agro Grill. Todos os direitos reservados.</p>
+      <a href="#">Desenvolvido por ChupaBalaHalls</a>
+    </div>
     </div>
   </footer>
 
@@ -2170,7 +2769,7 @@
       for (let i = 0; i < n; i++) {
         const dot = document.createElement('button');
         dot.className = 'carousel-dot' + (i === currentSlide ? ' active' : '');
-        dot.setAttribute('aria-label', `Slide ${i+1}`);
+        dot.setAttribute('aria-label', `Slide ${i + 1}`);
         dot.addEventListener('click', () => goTo(i));
         dotsContainer.appendChild(dot);
       }
@@ -2209,4 +2808,5 @@
   </script>
 
 </body>
+
 </html>
