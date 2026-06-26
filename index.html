@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <link rel="icon" type="image/png" href="assests/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -465,7 +465,6 @@
 
     .hero-inner {
       position: relative;
-      //*z-index: 2;*//
       max-width: 720px;
     }
 
@@ -480,12 +479,46 @@
 
     .container-imagem-flutuante {
       position: absolute;
-      top: 50px;
+      top: 115px;
       /* Distância do topo */
-      right: 50px;
+      right: -120px;
       /* Distância da direita */
-      z-index: 8;
-      /* Garante que ela fique na frente */
+      z-index: 0;
+      /* Coloca ele na camada de fundo */
+      pointer-events: none;
+      /* Impede que o selo atrapalhe cliques no texto */
+    }
+
+    .container-imagem-flutuante img {
+      width: 200px;
+      /* DIMINUÍDO: Agora está num tamanho aceitável */
+      height: auto;
+    }
+
+    /* Ajustes para dispositivos móveis (telas menores que 768px) */
+    @media (max-width: 768px) {
+      .container-imagem-flutuante {
+        position: absolute;
+        /* Ajuste fino para o local sinalizado */
+        top: 50%;
+        /* Centraliza verticalmente na seção */
+        right: -30px;
+        /* Move para a direita, saindo um pouco do container */
+        z-index: 0;
+        /* Garante que fique atrás do texto */
+      }
+
+      .container-imagem-flutuante img {
+        width: 100px;
+        /* Tamanho menor para mobile */
+        transform: rotate(-10deg);
+        /* Inclinação mais suave no mobile */
+      }
+
+      /* Opcional: Ajusta o título para garantir que não cubra o selo de forma ruim */
+      .hero-inner {
+        padding-right: 20px;
+      }
     }
 
     .hero-eyebrow {
@@ -509,6 +542,8 @@
       color: var(--white);
       line-height: 1.0;
       margin-bottom: 1.25rem;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-title .brand-green {
@@ -524,6 +559,7 @@
       margin-bottom: 1rem;
       line-height: 1.5;
     }
+
 
     .hero-body {
       font-size: 1rem;
@@ -1951,7 +1987,7 @@
       <div class="container">
         <div class="hero-inner">
           <div class="container-imagem-flutuante">
-            <img src="assests/icon_o_original-removebg-preview.png" alt="logo O ORIGINAL">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="logo O ORIGINAL">
           </div>
           <div class="hero-eyebrow reveal">
             <span class="eyebrow">Rio Verde · Goiás · Desde 2018</span>
