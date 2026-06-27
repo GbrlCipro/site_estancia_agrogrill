@@ -70,6 +70,10 @@
     rel="stylesheet" />
 
   <style>
+    * {
+      outline: 2px solid red !important;
+    }
+
     /* =============================================
        DESIGN TOKENS
     ============================================= */
@@ -479,20 +483,18 @@
 
     .container-imagem-flutuante {
       position: absolute;
-      top: 115px;
+      top: 90px;
       /* Distância do topo */
       right: -120px;
       /* Distância da direita */
-      z-index: 0;
+      z-index: -1;
       /* Coloca ele na camada de fundo */
       pointer-events: none;
       /* Impede que o selo atrapalhe cliques no texto */
     }
 
     .container-imagem-flutuante img {
-      width: 200px;
-      /* DIMINUÍDO: Agora está num tamanho aceitável */
-      height: auto;
+      width: 170px;
     }
 
     /* Ajustes para dispositivos móveis (telas menores que 768px) */
@@ -544,6 +546,7 @@
       margin-bottom: 1.25rem;
       position: relative;
       z-index: 1;
+      display: inline-block;
     }
 
     .hero-title .brand-green {
@@ -1986,14 +1989,18 @@
 
       <div class="container">
         <div class="hero-inner">
-          <div class="container-imagem-flutuante">
-            <img src="assets/icon_o_original-removebg-preview.png" alt="logo O ORIGINAL">
-          </div>
+
           <div class="hero-eyebrow reveal">
             <span class="eyebrow">Rio Verde · Goiás · Desde 2018</span>
           </div>
           <h1 class="hero-title display reveal reveal-delay-1">
-            ESTÂNCIA<br><span class="brand-green">AGRO</span> GRILL
+            ESTÂNCIA<br>
+            <span class="brand-green">AGRO</span> GRILL
+
+            <span class="container-imagem-flutuante">
+              <img src="assets/icon_o_original-removebg-preview.png" alt="">
+            </span>
+
           </h1>
           <p class="hero-subtitle reveal reveal-delay-2">
             O encontro perfeito entre gastronomia,<br>tradição e o espírito do agronegócio.
