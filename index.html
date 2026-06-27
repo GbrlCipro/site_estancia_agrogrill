@@ -70,9 +70,9 @@
     rel="stylesheet" />
 
   <style>
-    * {
+    /** {
       outline: 2px solid red !important;
-    }
+    }*/
 
     /* =============================================
        DESIGN TOKENS
@@ -289,9 +289,14 @@
 
     /* Logo */
     .logo {
-      display: flex;
+      display: flex !important;
       flex-direction: column;
       gap: 0.1rem;
+      position: relative !important;
+      /* Essencial para o absolute do selo funcionar */
+      align-items: center;
+      overflow: visible !important;
+      /* Impede que o selo seja cortado */
     }
 
     .logo-mark {
@@ -301,6 +306,9 @@
       color: var(--white);
       letter-spacing: 0.04em;
       line-height: 1;
+      position: relative;
+      display: inline-block;
+      /* Importante para o selo posicionar nele */
     }
 
     .logo-mark span {
@@ -314,6 +322,24 @@
       text-transform: uppercase;
       color: var(--accent);
       opacity: 0.85;
+    }
+
+    /* Modificador para o selo no header */
+    .header-selo {
+      position: absolute !important;
+      top: -1px !important;
+      /* Ajuste fino para subir/descer */
+      right: -30px !important;
+      /* Ajuste para sair do texto do logo */
+      z-index: -1 !important;
+      display: block !important;
+      pointer-events: none;
+    }
+
+    .header-selo img {
+      width: 40px !important;
+      /* Tamanho bem pequeno para o menu */
+      transform: rotate(-10deg);
     }
 
     /* Nav links */
@@ -498,20 +524,20 @@
     }
 
     /* Ajustes para dispositivos móveis (telas menores que 768px) */
-    @media (max-width: 768px) {
+    @media (max-width: 913px) {
       .container-imagem-flutuante {
         position: absolute;
-        /* Ajuste fino para o local sinalizado */
-        top: 50%;
-        /* Centraliza verticalmente na seção */
-        right: -30px;
-        /* Move para a direita, saindo um pouco do container */
-        z-index: 0;
-        /* Garante que fique atrás do texto */
+        top: 20px;
+        /* Ajuste vertical: negativo sobe, positivo desce */
+        right: -75px;
+        /* Ajuste horizontal: negativo move para fora */
+        z-index: -1;
+        /* Fica atrás do texto */
+        pointer-events: none;
       }
 
       .container-imagem-flutuante img {
-        width: 100px;
+        width: 90px;
         /* Tamanho menor para mobile */
         transform: rotate(-10deg);
         /* Inclinação mais suave no mobile */
@@ -546,7 +572,8 @@
       margin-bottom: 1.25rem;
       position: relative;
       z-index: 1;
-      display: inline-block;
+      display: block;
+      width: fit-content;
     }
 
     .hero-title .brand-green {
@@ -1947,6 +1974,9 @@
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
           <div class="logo-mark">ESTÂNCIA <span>AGRO</span> GRILL</div>
+          <span class="container-imagem-flutuante header-selo">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="">
+          </span>
           <div class="logo-sub">Rio Verde · Goiás</div>
         </a>
 
@@ -2685,6 +2715,9 @@
           <div class="logo">
             <div class="logo-mark">ESTÂNCIA <span>AGRO</span> GRILL</div>
             <div class="logo-sub">Rio Verde · Goiás</div>
+            <span class="container-imagem-flutuante header-selo">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="">
+          </span>
           </div>
           <p>Sabor, tradição e experiências memoráveis no coração do agronegócio goiano. Venha nos visitar.</p>
           <div class="footer-socials">
