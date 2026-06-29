@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+  <link rel="manifest" href="/manifest.json">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,7 @@
   <meta name="description"
     content="Estância Agro Grill — O encontro perfeito entre gastronomia, tradição e o espírito do agronegócio em Rio Verde-GO. Reserve sua mesa e viva uma experiência memorável." />
   <meta name="keywords"
-    content="restaurante Rio Verde, churrasco premium, agronegócio, eventos corporativos, gastronomia Goiás, Estância Agro Grill" />
+    content="restaurante Rio Verde, churrasco premium, agronegócio, eventos corporativos, gastronomia Goiás, Estância Agro Grill, gastronimia rio verde, janta Rio Verde, comida Rio verde" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://estanciaagrogrill.com.br/" />
 
@@ -170,7 +171,7 @@
     }
 
     .section-pad {
-      padding: 7rem 0;
+      padding: 5rem 0;
     }
 
     .gold-line {
@@ -506,11 +507,12 @@
 
     /* Ajustes para dispositivos móveis (telas menores que 768px) */
     @media (max-width: 913px) {
+
       .container-imagem-flutuante {
         position: absolute;
-        top: 20px;
+        top: 2.4rem;
         /* Ajuste vertical: negativo sobe, positivo desce */
-        right: -75px;
+        right: -3.6rem;
         /* Ajuste horizontal: negativo move para fora */
         z-index: -1;
         /* Fica atrás do texto */
@@ -518,15 +520,19 @@
       }
 
       .container-imagem-flutuante img {
-        width: 90px;
+        width: 80px;
         /* Tamanho menor para mobile */
         transform: rotate(-10deg);
         /* Inclinação mais suave no mobile */
       }
 
-      /* Opcional: Ajusta o título para garantir que não cubra o selo de forma ruim */
-      .hero-inner {
-        padding-right: 20px;
+      .hero-subtitle {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .hero-body {
+        padding-bottom: 2rem;
       }
     }
 
@@ -784,6 +790,7 @@
     ============================================= */
     #destaques {
       background: #141414;
+      padding-bottom: 1px;
     }
 
     .destaques-header {
@@ -876,6 +883,7 @@
       font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
       color: var(--white);
+      padding-bottom: 1rem;
     }
 
     .cardapio-header .gold-line {
@@ -1598,6 +1606,13 @@
       max-width: 260px;
     }
 
+    .img-footer {
+      position: absolute;
+      width: 60px;
+      left: 14rem;
+      pointer-events: none;
+    }
+
     .footer-socials {
       display: flex;
       gap: 0.75rem;
@@ -1648,7 +1663,7 @@
 
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.06);
-      padding: 1.5rem 0;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1716,6 +1731,10 @@
         display: none;
       }
 
+      .img-footer {
+        left: 11.9rem;
+      }
+
       .hamburger {
         display: none;
       }
@@ -1781,7 +1800,11 @@
 
     @media (max-width: 768px) {
       .section-pad {
-        padding: 4.5rem 0;
+        padding: 2.5rem 0;
+      }
+
+      .img-footer {
+        left: 11rem;
       }
 
       .destaques-grid {
@@ -1955,7 +1978,6 @@
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
           <div class="logo-mark">ESTÂNCIA<br><span>AGRO</span> GRILL</div>
-          <div class="logo-sub">Rio Verde · Goiás</div>
         </a>
 
         <ul class="nav-links" role="navigation">
@@ -2014,7 +2036,7 @@
             O encontro perfeito entre gastronomia,<br>tradição e o espírito do agronegócio.
           </p>
           <p class="hero-body reveal reveal-delay-3">
-            Um ambiente pensado para quem valoriza boa comida,<br>bons negócios e grandes momentos.
+            Um ambiente pensado para quem valoriza boa comida, bons negócios e grandes momentos.
           </p>
           <div class="hero-actions reveal reveal-delay-4">
             <a href="https://wa.me/5564999990000?text=Reserva" target="_blank" class="btn btn-gold">🍽 Reservar Mesa</a>
@@ -2690,9 +2712,13 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
+
+          <span class="img-footer">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="">
+          </span>
+
           <div class="logo">
-            <div class="logo-mark">ESTÂNCIA <span>AGRO</span> GRILL</div>
-            <div class="logo-sub">Rio Verde · Goiás</div>
+            <div class="logo-mark">ESTÂNCIA<br><span>AGRO</span> GRILL</div>
           </div>
           <p>Sabor, tradição e experiências memoráveis no coração do agronegócio goiano. Venha nos visitar.</p>
           <div class="footer-socials">
