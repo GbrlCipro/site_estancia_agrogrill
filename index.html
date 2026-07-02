@@ -282,6 +282,13 @@
       border-bottom: 1px solid var(--line);
     }
 
+    .img-header {
+      position: absolute;
+      width: 60px;
+      left: 13.2rem;
+      pointer-events: none;
+    }
+
     .nav-inner {
       display: flex;
       align-items: center;
@@ -491,7 +498,7 @@
 
     .container-imagem-flutuante {
       position: absolute;
-      top: 35px;
+      top: 52px;
       /* Distância do topo */
       right: -10.5rem;
       /* Distância da direita */
@@ -503,37 +510,6 @@
 
     .container-imagem-flutuante img {
       width: 170px;
-    }
-
-    /* Ajustes para dispositivos móveis (telas menores que 768px) */
-    @media (max-width: 913px) {
-
-      .container-imagem-flutuante {
-        position: absolute;
-        top: 0.9rem;
-        /* Ajuste vertical: negativo sobe, positivo desce */
-        right: -5.6rem;
-        /* Ajuste horizontal: negativo move para fora */
-        z-index: -1;
-        /* Fica atrás do texto */
-        pointer-events: none;
-      }
-
-      .container-imagem-flutuante img {
-        width: 90px;
-        /* Tamanho menor para mobile */
-        transform: rotate(-10deg);
-        /* Inclinação mais suave no mobile */
-      }
-
-      .hero-subtitle {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-
-      .hero-body {
-        padding-bottom: 2rem;
-      }
     }
 
     .hero-eyebrow {
@@ -1735,6 +1711,10 @@
         left: 11.9rem;
       }
 
+      .container-imagem-flutuante {
+        /*width: 500px;*/
+      }
+
       .hamburger {
         display: none;
       }
@@ -1798,7 +1778,50 @@
       }
     }
 
+    @media (max-width: 913px) {
+
+      .img-header {
+            left: 11rem;
+      }
+
+      .container-imagem-flutuante {
+        position: absolute;
+        width: 160px;
+        top: 0.1rem;
+        /* Ajuste vertical: negativo sobe, positivo desce */
+        right: -9.8rem;
+        /* Ajuste horizontal: negativo move para fora */
+        z-index: -1;
+        /* Fica atrás do texto */
+        pointer-events: none;
+      }
+
+      .container-imagem-flutuante img {
+        width: 500px;
+        /* Tamanho menor para mobile */
+      }
+
+      .hero-subtitle {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .hero-body {
+        padding-bottom: 2rem;
+      }
+    }
+
     @media (max-width: 768px) {
+
+      .container-imagem-flutuante {
+        left: 18.5rem;
+        top: 10px;
+        /*width: 110px;*/
+      }
+
+      .img-header {
+        left: 11.2rem;
+      }
 
       .destaques-header {
         margin: 0px auto 3rem;
@@ -1898,6 +1921,18 @@
     }
 
     @media (max-width: 480px) {
+
+      .img-header {
+        left: 10.2rem;
+      }
+
+      .container-imagem-flutuante {
+        width: 115px;
+        left: 249px;
+        top: -5px;
+        position: absolute;
+      }
+
       .container {
         padding: 0 1.25rem;
       }
@@ -1979,6 +2014,11 @@
 
   <!-- ============ HEADER ============ -->
   <header id="header">
+
+    <span class="img-header">
+      <img src="assets/icon_o_original-removebg-preview.png" alt="">
+    </span>
+
     <div class="container">
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
