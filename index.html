@@ -154,7 +154,7 @@
 
     .eyebrow {
       font-family: var(--font-body);
-      font-size: 0.6875rem;
+      font-size: 1.2rem;
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -271,7 +271,7 @@
       right: 0;
       z-index: 100;
       transition: all 0.4s var(--ease);
-      padding: 1.5rem 0;
+      padding: 1rem 0;
     }
 
     #header.scrolled {
@@ -285,7 +285,8 @@
     .img-header {
       position: absolute;
       width: 60px;
-      left: 13.2rem;
+      left: 13.1rem;
+      top: 10px;
       pointer-events: none;
     }
 
@@ -1703,16 +1704,40 @@
        RESPONSIVE
     ============================================= */
     @media (max-width: 1024px) {
+
+      .logo-mark {
+        font-family: var(--font-display);
+        font-size: 2.375rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.04em;
+        line-height: 1;
+        position: relative;
+        display: inline-block;
+      }
+
+      .container-imagem-flutuante {
+        position: absolute;
+        top: 6px;
+        right: -10.5rem;
+        z-index: -1;
+        pointer-events: none;
+      }
+
       .nav-links {
         display: none;
       }
 
-      .img-footer {
-        left: 11.9rem;
+      .img-header {
+        position: absolute;
+        width: 89px;
+        top: 11px;
+        left: 17.3rem;
+        pointer-events: none;
       }
 
-      .container-imagem-flutuante {
-        /*width: 500px;*/
+      .img-footer {
+        left: 11.9rem;
       }
 
       .hamburger {
@@ -1760,6 +1785,20 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .loc-actions {
+        display: flex;
+        width: 100%;
+        /* Garante que o contêiner ocupe a largura total */
+        gap: 1rem;
+        /* Mantém o espaçamento entre eles */
+        margin-bottom: 8px;
+      }
+
+      .loc-actions a {
+        justify-content: center;
+        flex: 1;
+      }
+
       .loc-grid {
         grid-template-columns: 1fr;
       }
@@ -1780,16 +1819,35 @@
 
     @media (max-width: 913px) {
 
+      .hero-eyebrow {
+        margin-top: 9rem;
+
+      }
+
+      .hero-inner {
+        top: -4rem;
+        left: -6rem;
+      }
+
       .img-header {
-            left: 11rem;
+        left: 17.5rem;
+        width: 5.8rem;
+      }
+
+      .nav-cta {
+        width: 16rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
       }
 
       .container-imagem-flutuante {
         position: absolute;
-        width: 160px;
-        top: 0.1rem;
+        width: 175px;
+        top: 1rem;
         /* Ajuste vertical: negativo sobe, positivo desce */
-        right: -9.8rem;
+        right: -10.8rem;
         /* Ajuste horizontal: negativo move para fora */
         z-index: -1;
         /* Fica atrás do texto */
@@ -1801,30 +1859,45 @@
         /* Tamanho menor para mobile */
       }
 
+      .hero-title {
+        font-size: clamp(5rem, 7vw, 5.5rem);
+      }
+
       .hero-subtitle {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: clamp(2.125rem, 2vw, 1.375rem);
       }
 
       .hero-body {
-        padding-bottom: 2rem;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 1.75;
+        max-width: 520px;
+        margin-bottom: 1.5rem
       }
     }
 
     @media (max-width: 768px) {
 
-      .container-imagem-flutuante {
-        left: 18.5rem;
-        top: 10px;
-        /*width: 110px;*/
+      .logo-mark {
+        font-size: 1.5rem;
+        left: -1rem;
       }
 
       .img-header {
-        left: 11.2rem;
+        left: 10.7rem;
+        width: 4rem;
+      }
+
+      .container-imagem-flutuante {
+        left: 18.5rem;
+        top: -0.5rem;
+        width: 9rem;
       }
 
       .destaques-header {
-        margin: 0px auto 3rem;
+        margin: 0px auto 0.5rem;
       }
 
       .section-pad {
@@ -1922,14 +1995,19 @@
 
     @media (max-width: 480px) {
 
+      .logo-mark {
+        font-size: 1.2rem;
+      }
+
       .img-header {
-        left: 10.2rem;
+        left: 9rem;
+        width: 50px;
       }
 
       .container-imagem-flutuante {
-        width: 115px;
-        left: 249px;
-        top: -5px;
+        width: 105px;
+        left: 243px;
+        top: -11px;
         position: absolute;
       }
 
@@ -1943,6 +2021,14 @@
 
       .dif-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .destaques-header {
+        margin: 0px auto 1rem;
+      }
+
+      .loc-actions {
+        margin-bottom: -1rem;
       }
     }
 
