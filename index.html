@@ -452,11 +452,11 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1800&q=80');
+      background-image: url('/assets/fundo-hero.jpg');
       background-size: cover;
       background-position: center;
       transform: scale(1.05);
-      transition: transform 12s ease-out;
+      transition: transform 6s ease-out;      
     }
 
     .hero-bg.loaded {
@@ -1429,7 +1429,7 @@
 
     .loc-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 40% 60%;
       align-items: stretch;
     }
 
@@ -2007,15 +2007,16 @@
 
       .hero-title {
         font-size: 2.5rem;
+        margin-top: 4rem;
       }
 
       .hero-subtitle {
-        margin-top: 1rem;
-        font-size: 1.0625rem;
+        margin-top: 2.5rem;
+        font-size: 1.32rem;
       }
 
       .hero-inner {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
 
       .hero-eyebrow {
@@ -2024,9 +2025,13 @@
       }
 
       .hero-body {
-        font-size: 0.9375rem;
+        font-size: 1.17rem;
         margin-bottom: 2rem;
-        margin-top: 0.75rem;
+        margin-top: 1.75rem;
+      }
+
+      .hero-actions {
+        margin-top: 5rem;
       }
 
       .eyebrow {
@@ -2980,7 +2985,7 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
+    }, {passive: true});
 
     // ── Mobile menu ──
     document.getElementById('hamburger').addEventListener('click', () => {
@@ -3004,7 +3009,7 @@
           revealObserver.unobserve(e.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, {threshold: 0.12});
     revealEls.forEach(el => revealObserver.observe(el));
 
     // ── Cardápio tabs ──
@@ -3078,7 +3083,7 @@
     document.getElementById('carouselNext').addEventListener('click', () => goTo(currentSlide + 1));
 
     buildDots();
-    window.addEventListener('resize', () => { buildDots(); goTo(0); }, { passive: true });
+    window.addEventListener('resize', () => {buildDots(); goTo(0);}, {passive: true});
 
     // Auto-advance
     setInterval(() => {
@@ -3086,13 +3091,13 @@
       goTo(currentSlide < maxIdx ? currentSlide + 1 : 0);
     }, 5000);
 
-    // ── Parallax hero ──
+    // ── Imagem ascendente hero ──
     window.addEventListener('scroll', () => {
       const heroBg = document.getElementById('heroBg');
       if (heroBg) {
         heroBg.style.transform = `scale(1) translateY(${window.scrollY * 0.25}px)`;
       }
-    }, { passive: true });
+    }, {passive: true});
 
     // Enviar mensagem personalizada ao pedir orçamento pra eventos
     function enviarWhatsApp() {
