@@ -285,8 +285,8 @@
     .img-header {
       position: absolute;
       width: 60px;
-      left: 13.1rem;
-      top: 10px;
+      left: 11.5rem;
+      top: 8px;
       pointer-events: none;
     }
 
@@ -315,21 +315,20 @@
       letter-spacing: 0.04em;
       line-height: 1;
       position: relative;
-      display: inline-block;
-      /* Importante para o selo posicionar nele */
+      display: flex;
+      flex-direction: column;
+      /* Empilha os itens: um fica embaixo do outro */
+      align-items: center;
+      /* Centraliza os textos horizontalmente */
+      text-align: center;
     }
 
-    .logo-mark span {
-      color: var(--accent);
+    .logo-mark .cor-agro {
+      color: #e8580a;
     }
 
-    .logo-sub {
-      font-size: 0.5625rem;
-      font-weight: 600;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--accent);
-      opacity: 0.85;
+    .logo-mark .logo-agrogrill {
+      font-size: 1rem;
     }
 
     /* Nav links */
@@ -456,7 +455,7 @@
       background-size: cover;
       background-position: center;
       transform: scale(1.05);
-      transition: transform 6s ease-out;      
+      transition: transform 6s ease-out;
     }
 
     .hero-bg.loaded {
@@ -499,7 +498,7 @@
 
     .container-imagem-flutuante {
       position: absolute;
-      top: 52px;
+      top: 1.5rem;
       /* Distância do topo */
       right: -10.5rem;
       /* Distância da direita */
@@ -529,19 +528,27 @@
     }
 
     .hero-title {
-      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-size: clamp(3rem, 7vw, 6.5rem);
       font-weight: 900;
       color: var(--white);
       line-height: 1.0;
       margin-bottom: 1.25rem;
       position: relative;
       z-index: 1;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
       width: fit-content;
     }
 
-    .hero-title .brand-green {
-      color: var(--accent);
+    .hero-agrogrill {
+      font-size: 4rem;
+    }
+
+    .hero-title .cor-agro {
+      color: #e8580a;
+
     }
 
     .hero-subtitle {
@@ -1571,8 +1578,18 @@
       padding-bottom: 3rem;
     }
 
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* Posiciona o bloco à esquerda */
+      position: relative;
+    }
+
+    /* Mantém ESTÂNCIA centralizada em relação a AGRO GRILL */
     .footer-brand .logo-mark {
-      font-size: 1.5rem;
+      align-items: center;
+      text-align: center;
     }
 
     .footer-brand p {
@@ -1586,8 +1603,9 @@
     .img-footer {
       position: absolute;
       width: 60px;
-      left: 14rem;
+      left: 7.3rem;
       pointer-events: none;
+      top: -0.3rem;
     }
 
     .footer-socials {
@@ -2162,7 +2180,6 @@
 
   <!-- ============ HEADER ============ -->
   <header id="header">
-
     <span class="img-header">
       <img src="assets/icon_o_original-removebg-preview.png" alt="">
     </span>
@@ -2170,7 +2187,12 @@
     <div class="container">
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
-          <div class="logo-mark">ESTÂNCIA<br><span>AGRO</span> GRILL</div>
+          <div class="logo-mark">
+            <span class="logo-estancia">ESTÂNCIA</span>
+            <span class="logo-agrogrill">
+              <span class="cor-agro">AGRO</span> GRILL
+            </span>
+          </div>
         </a>
 
         <ul class="nav-links" role="navigation">
@@ -2217,14 +2239,17 @@
             <span class="eyebrow">Rio Verde · Goiás · Desde 2018</span>
           </div>
           <h1 class="hero-title display reveal reveal-delay-1">
-            ESTÂNCIA<br>
-            <span class="brand-green">AGRO</span> GRILL
+
+            <span class="hero-estancia">ESTÂNCIA</span>
+            <span class="hero-agrogrill">
+              <span class="cor-agro">AGRO</span> GRILL
+            </span>
 
             <span class="container-imagem-flutuante">
               <img src="assets/icon_o_original-removebg-preview.png" alt="">
             </span>
-
           </h1>
+
           <p class="hero-subtitle reveal reveal-delay-2">
             O encontro perfeito entre gastronomia,<br>tradição e o espírito do agronegócio.
           </p>
@@ -2905,13 +2930,14 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-
           <span class="img-footer">
             <img src="assets/icon_o_original-removebg-preview.png" alt="">
           </span>
-
-          <div class="logo">
-            <div class="logo-mark">ESTÂNCIA<br><span>AGRO</span> GRILL</div>
+          <div class="logo-mark">
+            <span class="logo-estancia">ESTÂNCIA</span>
+            <span class="logo-agrogrill">
+              <span class="cor-agro">AGRO</span> GRILL
+            </span>
           </div>
           <p>Sabor, tradição e experiências memoráveis no coração do agronegócio goiano. Venha nos visitar.</p>
           <div class="footer-socials">
@@ -2985,7 +3011,7 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
-    }, {passive: true});
+    }, { passive: true });
 
     // ── Mobile menu ──
     document.getElementById('hamburger').addEventListener('click', () => {
@@ -3009,7 +3035,7 @@
           revealObserver.unobserve(e.target);
         }
       });
-    }, {threshold: 0.12});
+    }, { threshold: 0.12 });
     revealEls.forEach(el => revealObserver.observe(el));
 
     // ── Cardápio tabs ──
@@ -3083,7 +3109,7 @@
     document.getElementById('carouselNext').addEventListener('click', () => goTo(currentSlide + 1));
 
     buildDots();
-    window.addEventListener('resize', () => {buildDots(); goTo(0);}, {passive: true});
+    window.addEventListener('resize', () => { buildDots(); goTo(0); }, { passive: true });
 
     // Auto-advance
     setInterval(() => {
@@ -3097,7 +3123,7 @@
       if (heroBg) {
         heroBg.style.transform = `scale(1) translateY(${window.scrollY * 0.25}px)`;
       }
-    }, {passive: true});
+    }, { passive: true });
 
     // Enviar mensagem personalizada ao pedir orçamento pra eventos
     function enviarWhatsApp() {
