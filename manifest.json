@@ -9,7 +9,7 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/site_estancia_agrogrill/assets/icon_pwa.png",
+      "src": "assets/icon_pwa.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
