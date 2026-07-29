@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#000000">
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -289,8 +289,8 @@
 
     .img-header {
       position: absolute;
-      width: 60px;
-      left: 11.5rem;
+      width: 50px;
+      left: 11.45rem;
       top: 8px;
       pointer-events: none;
     }
@@ -332,8 +332,8 @@
       color: #e8580a;
     }
 
-    .logo-mark .logo-agrogrill {
-      font-size: 1rem;
+    .logo-agrogrill {
+      font-size: 0.7rem;
     }
 
     /* Nav links */
@@ -503,9 +503,9 @@
 
     .container-imagem-flutuante {
       position: absolute;
-      top: 1.5rem;
+      top: -0.5rem;
       /* Distância do topo */
-      right: -10.5rem;
+      right: -11rem;
       /* Distância da direita */
       z-index: -1;
       /* Coloca ele na camada de fundo */
@@ -514,7 +514,7 @@
     }
 
     .container-imagem-flutuante img {
-      width: 170px;
+      width: 180px;
     }
 
     .hero-eyebrow {
@@ -545,10 +545,11 @@
       align-items: center;
       text-align: center;
       width: fit-content;
+      left: -3rem;
     }
 
     .hero-agrogrill {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     .hero-title .cor-agro {
@@ -1607,10 +1608,10 @@
 
     .img-footer {
       position: absolute;
-      width: 60px;
-      left: 7.3rem;
+      width: 50px;
+      left: 7.2rem;
       pointer-events: none;
-      top: -0.3rem;
+      top: -0.5rem;
     }
 
     .footer-socials {
@@ -2008,7 +2009,23 @@
     @media (max-width: 480px) {
 
       .logo-mark {
-        font-size: 1.2rem;
+        font-family: var(--font-display);
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.04em;
+        line-height: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* Empilha os itens: um fica embaixo do outro */
+        align-items: center;
+        /* Centraliza os textos horizontalmente */
+        text-align: center;
+      }
+
+      .logo-agrogrill {
+        font-size: 0.7rem;
       }
 
       .img-header {
