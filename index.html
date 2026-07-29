@@ -5,7 +5,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#000000">
 
@@ -1731,19 +1731,41 @@
 
       .logo-mark {
         font-family: var(--font-display);
-        font-size: 2.375rem;
+        font-size: 1.375rem;
         font-weight: 700;
         color: var(--white);
         letter-spacing: 0.04em;
         line-height: 1;
         position: relative;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        /* Empilha os itens: um fica embaixo do outro */
+        align-items: center;
+        /* Centraliza os textos horizontalmente */
+        text-align: center;
+      }
+
+      .img-header {
+        position: absolute;
+        left: 9.3rem;
+      }
+
+      .hero-inner {
+        margin-top: 20rem;
+      }
+
+      .hero-title {
+        font-size: 5rem;
+      }
+
+      .hero-agrogrill {
+        font-size: 2rem;
       }
 
       .container-imagem-flutuante {
         position: absolute;
-        top: 6px;
-        right: -10.5rem;
+        top: -1.5rem;
+        right: -11rem;
         z-index: -1;
         pointer-events: none;
       }
@@ -1752,16 +1774,8 @@
         display: none;
       }
 
-      .img-header {
-        position: absolute;
-        width: 89px;
-        top: 11px;
-        left: 17.3rem;
-        pointer-events: none;
-      }
-
       .img-footer {
-        left: 11.9rem;
+        left: 7.2rem;
       }
 
       .hamburger {
@@ -1894,23 +1908,63 @@
     @media (max-width: 768px) {
 
       .logo-mark {
-        font-size: 1.5rem;
-        left: -1rem;
+        font-family: var(--font-display);
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.04em;
+        line-height: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* Empilha os itens: um fica embaixo do outro */
+        align-items: center;
+        /* Centraliza os textos horizontalmente */
+        text-align: center;
+      }
+
+      .logo-agrogrill {
+        font-size: 0.7rem;
       }
 
       .img-header {
-        left: 10.7rem;
+        left: 9.2rem;
+        top: 0rem;
         width: 4rem;
-      }
-
-      .container-imagem-flutuante {
-        right: -4.5rem;
-        top: -0.25rem;
-        width: 6.5rem;
       }
 
       .destaques-header {
         margin: 0px auto 0.5rem;
+      }
+
+      .hero-inner {
+        top: 1rem;
+      }
+
+      .hero-title {
+        font-size: 6rem;
+        margin-top: 4rem;
+        left: 0rem;
+      }
+
+      .hero-agrogrill {
+        font-size: 3rem;
+      }
+
+      .container-imagem-flutuante {
+        right: -8.5rem;
+        top: 0.75rem;
+        width: 8.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 2.3rem;
+        margin-top: 4rem;
+      }
+
+      .hero-body {
+        font-size: 1.5rem;
+        margin-top: 4rem;
       }
 
       .section-pad {
@@ -1918,7 +1972,9 @@
       }
 
       .img-footer {
-        left: 11rem;
+        left: 7.2rem;
+        top: -0.8rem;
+        width: 4rem;
       }
 
       .destaques-grid {
@@ -2029,15 +2085,15 @@
       }
 
       .img-header {
-        left: 8rem;
+        left: 8.5rem;
         width: 36px;
-        top: 1rem;
+        top: 0.9rem;
       }
 
       .container-imagem-flutuante {
-        width: 70px;
-        right: -4.3rem;
-        top: 0.62rem;
+        width: 7rem;
+        right: -7rem;
+        top: -1rem;
         position: absolute;
       }
 
@@ -2046,8 +2102,13 @@
       }
 
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 4rem;
+        left: 1rem;
+      }
+
+      .hero-agrogrill {
+        font-size: 2rem;
       }
 
       .hero-subtitle {
@@ -2056,7 +2117,7 @@
       }
 
       .hero-inner {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
 
       .hero-eyebrow {
@@ -2071,7 +2132,7 @@
       }
 
       .hero-actions {
-        margin-top: 5rem;
+        margin-top: 4rem;
       }
 
       .eyebrow {
@@ -2091,8 +2152,9 @@
       }
 
       .img-footer {
-        left: 10rem;
-        width: 47px;
+        left: 7.25rem;
+        width: 36px;
+        top: 0rem;
       }
     }
 
