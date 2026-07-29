@@ -1,15 +1,15 @@
 {
   "name": "Estância Agro Grill",
   "short_name": "Agro Grill",
-  "start_url": "/site-estancia-agrogrill/index.html",
-  "scope": "/site-estancia-agrogrill/",
-  "id": "/site-estancia-agrogrill/",
+  "start_url": "/site_estancia_agrogrill/index.html",
+  "scope": "/site_estancia_agrogrill/",
+  "id": "/site_estancia_agrogrill/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/site-estancia-agrogrill/assets/icon_pwa.png",
+      "src": "/site_estancia_agrogrill/assets/icon_pwa.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
