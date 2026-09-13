@@ -204,6 +204,7 @@
     .btn-gold {
       background: var(--accent);
       color: var(--dark);
+      white-space: nowrap;
     }
 
     .btn-gold:hover {
@@ -290,8 +291,8 @@
     .img-header {
       position: absolute;
       width: 50px;
-      left: 11.45rem;
-      top: 8px;
+      top: -0.4rem;
+      right: -3.15rem;
       pointer-events: none;
     }
 
@@ -394,7 +395,8 @@
       display: none;
       flex-direction: column;
       gap: 5px;
-      padding: 4px;
+      padding: 12px;
+      margin: -12px;
     }
 
     .hamburger span {
@@ -415,6 +417,8 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
+      overflow-y: auto;
+      padding: 4rem 1.5rem;
     }
 
     .mobile-menu.open {
@@ -435,8 +439,8 @@
 
     .mobile-menu-close {
       position: absolute;
-      top: 1.5rem;
-      right: 2rem;
+      top: 5.5rem;
+      right: 3rem;
       font-size: 2rem;
       color: var(--white);
     }
@@ -1124,6 +1128,13 @@
       background-attachment: fixed;
     }
 
+    @media (max-width: 1024px) {
+      .eventos-bg {
+        background-attachment: scroll;
+        /* fixed quebra/pisca no Safari iOS */
+      }
+    }
+
     .eventos-overlay {
       position: absolute;
       inset: 0;
@@ -1747,11 +1758,9 @@
 
       .img-header {
         position: absolute;
-        left: 9.3rem;
-        top: 1rem;
-        /* valor que funcionou no seu teste do DevTools */
+        top: -0.5rem;
+        right: -6rem;
         width: 10rem;
-        /* valor que funcionou no seu teste do DevTools */
       }
 
       .hero-inner {
@@ -1760,6 +1769,7 @@
 
       .hero-title {
         font-size: 5rem;
+        left: 0;
       }
 
       .hero-agrogrill {
@@ -1783,7 +1793,7 @@
       }
 
       .hamburger {
-        display: none;
+        display: flex;
       }
 
       .nav-cta {
@@ -1867,7 +1877,8 @@
 
       .img-header {
         width: 3.8rem;
-        top: 0.2rem;
+        top: -0.3rem;
+        right: -2.5rem;
       }
 
       .container-imagem-flutuante {
@@ -1908,7 +1919,7 @@
       .hero-subtitle {
         padding-top: 3rem;
         padding-bottom: 1rem;
-        font-size: clamp(2.125rem, 2.2vw, 1.375rem);
+        font-size: clamp(1.375rem, 2.2vw, 2.125rem);
       }
 
       .hero-body {
@@ -1951,8 +1962,8 @@
       }
 
       .img-header {
-        left: 9.2rem;
-        top: 0rem;
+        top: -0.99rem;
+        right: -3.99rem;
         width: 4rem;
       }
 
@@ -1961,7 +1972,7 @@
       }
 
       .hero-inner {
-        top: 1rem;
+        margin-top: 1rem;
       }
 
       .hero-title {
@@ -2108,9 +2119,9 @@
       }
 
       .img-header {
-        left: 8.5rem;
+        right: -2.24rem;
         width: 36px;
-        top: 0.9rem;
+        top: -0.2rem;
       }
 
       .container-imagem-flutuante {
@@ -2184,16 +2195,14 @@
     @media (max-width: 340px) {
 
       .img-header {
-        left: 7.9rem;
+        right: -1.8rem;
         width: 41px;
-        top: 1rem;
+        top: -0.2rem;
       }
 
       .hero-inner {
-        position: absolute;
         max-width: 754px;
-        left: 1rem;
-        margin-top: -6rem;
+        margin-top: -1rem;
       }
 
       .eyebrow {
@@ -2275,7 +2284,6 @@
         overflow: visible;
       }
     }
-
   </style>
 </head>
 
@@ -2296,10 +2304,6 @@
 
   <!-- ============ HEADER ============ -->
   <header id="header">
-    <span class="img-header">
-      <img src="assets/icon_o_original-removebg-preview.png" alt="">
-    </span>
-
     <div class="container">
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
@@ -2309,14 +2313,17 @@
               <span class="cor-agro">AGRO</span> GRILL
             </span>
           </div>
+          <span class="img-header">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="">
+          </span>
         </a>
 
         <ul class="nav-links" role="navigation">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#eventos">Eventos</a></li>
           <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#eventos">Eventos</a></li>
           <li><a href="#localizacao">Localização</a></li>
         </ul>
 
@@ -3059,7 +3066,8 @@
           <div class="footer-socials">
             <a href="https://www.instagram.com/estanciaagrogrill/" target="_blank" rel="noopener noreferrer"
               class="social-link" aria-label="Instagram">📸</a>
-            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <!-- Facebook removido: sem página oficial confirmada ainda. Reativar quando houver link real:
+            <a href="URL_REAL_AQUI" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">📘</a> -->
             <a href="https://wa.me/5564999990000" class="social-link" aria-label="WhatsApp">💬</a>
           </div>
         </div>
@@ -3104,7 +3112,8 @@
 
     <div class="footer-bottom">
       <p>© 2025 Estância Agro Grill. Todos os direitos reservados.</p>
-      <a href="#">Desenvolvido por ChupaBalaHalls</a>
+      <a href="https://gbrlcipro.github.io/" target="_blank" rel="noopener noreferrer">Desenvolvido por CIPRO | Presença
+        Digital</a>
     </div>
     </div>
   </footer>
