@@ -204,7 +204,6 @@
     .btn-gold {
       background: var(--accent);
       color: var(--dark);
-      white-space: nowrap;
     }
 
     .btn-gold:hover {
@@ -291,8 +290,8 @@
     .img-header {
       position: absolute;
       width: 50px;
-      top: -0.4rem;
-      right: -3.15rem;
+      left: 7.2rem;
+      top: -0.5rem;
       pointer-events: none;
     }
 
@@ -306,6 +305,8 @@
     .logo {
       display: flex !important;
       flex-direction: column;
+      align-items: flex-start;
+      /* Mesmo modelo de caixa do .footer-brand */
       gap: 0.1rem;
       position: relative !important;
       /* Essencial para o absolute do selo funcionar */
@@ -439,8 +440,8 @@
 
     .mobile-menu-close {
       position: absolute;
-      top: 5.5rem;
-      right: 3rem;
+      top: 1.5rem;
+      right: 2rem;
       font-size: 2rem;
       color: var(--white);
     }
@@ -1757,10 +1758,7 @@
       }
 
       .img-header {
-        position: absolute;
-        top: -0.5rem;
-        right: -6rem;
-        width: 10rem;
+        left: 7.2rem;
       }
 
       .hero-inner {
@@ -1877,8 +1875,6 @@
 
       .img-header {
         width: 3.8rem;
-        top: -0.3rem;
-        right: -2.5rem;
       }
 
       .container-imagem-flutuante {
@@ -1962,8 +1958,8 @@
       }
 
       .img-header {
-        top: -0.99rem;
-        right: -3.99rem;
+        left: 7.2rem;
+        top: -0.8rem;
         width: 4rem;
       }
 
@@ -2119,9 +2115,9 @@
       }
 
       .img-header {
-        right: -2.24rem;
+        left: 7.25rem;
         width: 36px;
-        top: -0.2rem;
+        top: 0rem;
       }
 
       .container-imagem-flutuante {
@@ -2193,12 +2189,6 @@
     }
 
     @media (max-width: 340px) {
-
-      .img-header {
-        right: -1.8rem;
-        width: 41px;
-        top: -0.2rem;
-      }
 
       .hero-inner {
         max-width: 754px;
@@ -2284,6 +2274,7 @@
         overflow: visible;
       }
     }
+
   </style>
 </head>
 
@@ -2307,23 +2298,23 @@
     <div class="container">
       <nav class="nav-inner">
         <a href="#inicio" class="logo" aria-label="Estância Agro Grill">
+          <span class="img-header">
+            <img src="assets/icon_o_original-removebg-preview.png" alt="">
+          </span>
           <div class="logo-mark">
             <span class="logo-estancia">ESTÂNCIA</span>
             <span class="logo-agrogrill">
               <span class="cor-agro">AGRO</span> GRILL
             </span>
           </div>
-          <span class="img-header">
-            <img src="assets/icon_o_original-removebg-preview.png" alt="">
-          </span>
         </a>
 
         <ul class="nav-links" role="navigation">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#galeria">Galeria</a></li>
           <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
           <li><a href="#localizacao">Localização</a></li>
         </ul>
 
@@ -3112,8 +3103,7 @@
 
     <div class="footer-bottom">
       <p>© 2025 Estância Agro Grill. Todos os direitos reservados.</p>
-      <a href="https://gbrlcipro.github.io/" target="_blank" rel="noopener noreferrer">Desenvolvido por CIPRO | Presença
-        Digital</a>
+      <a href="https://gbrlcipro.github.io/" target="_blank" rel="noopener noreferrer">Desenvolvido por CIPRO | Presença Digital</a>
     </div>
     </div>
   </footer>
