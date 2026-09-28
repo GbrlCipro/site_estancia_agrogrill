@@ -51,7 +51,6 @@
 
     img {
       display: block;
-      max-width: 100%;
     }
 
     a {
@@ -81,7 +80,7 @@
 
     .eyebrow {
       font-family: var(--font-body);
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -168,7 +167,6 @@
 
     .reveal.visible {
       opacity: 1;
-      transform: none;
     }
 
     .reveal-delay-1 {
@@ -237,6 +235,43 @@
       width: 6rem;
       display: block;
       left: 4.5rem;
+    }
+
+    /* Estado padrão (topo da página): selo visível, logo escondido */
+    .header-logo-img {
+      opacity: 0;
+      transition: opacity 0.4s var(--ease);
+    }
+
+    .header-seal {
+      position: absolute;
+      /* fica em cima do logo, no mesmo lugar */
+      top: 0;
+      opacity: 1;
+      object-fit: contain;
+      /* o selo é quadrado, não deforma na caixa do logo */
+    }
+
+    /* Selo maior só no desktop/notebook (o mobile fica como está) */
+    @media (min-width: 1025px) {
+      .header-seal {
+        width: 16.999rem;
+        height: 16.999rem;
+        margin-left: -3.5rem;
+      }
+
+      .reveal.visible {
+        transform: none;
+      }
+    }
+
+    /* Estado após rolar: logo aparece, selo some */
+    #header.show-logo .header-logo-img {
+      opacity: 1;
+    }
+
+    #header.show-logo .header-seal {
+      opacity: 0;
     }
 
     .footer-logo-img {
@@ -1716,9 +1751,9 @@
         display: none;
       }
 
-      .header-logo-img {
+      /*.header-logo-img {
         height: 42px;
-      }
+      }*/
 
       #hero {
         min-height: 100dvh;
@@ -1882,6 +1917,16 @@
         height: auto;
       }
 
+      .header-seal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        opacity: 1;
+        z-index: 2;
+        transform: translate(1rem, 1rem) scale(1.5);
+      }
+
       .container {
         padding: 0 1.25rem;
       }
@@ -1910,6 +1955,7 @@
 
       .hero-eyebrow {
         margin-bottom: 2.5rem;
+        display: none;
       }
 
       .hero-body {
