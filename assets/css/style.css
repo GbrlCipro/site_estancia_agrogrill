@@ -148,6 +148,9 @@
     .btn-green {
       background: var(--orange);
       color: var(--white);
+      border: solid 1px var(--orange-d);
+      width: 13rem;
+      align-content: center;
     }
 
     .btn-green:hover {
@@ -348,8 +351,8 @@
 
     .mobile-menu-close {
       position: absolute;
-      top: 1.5rem;
-      right: 2rem;
+      top: 7.5rem;
+      right: 4rem;
       font-size: 2rem;
       color: var(--white);
     }
@@ -1875,7 +1878,8 @@
     @media (max-width: 480px) {
 
       .header-logo-img {
-        height: 36px;
+        left: 1rem;
+        height: auto;
       }
 
       .container {
@@ -1892,16 +1896,20 @@
       }
 
       .hero-logo-img {
-        width: 130px;
+        width: 21rem;
+      }
+
+      .footer-brand {
+        align-items: center;
       }
 
       .footer-logo-img {
-        width: 100px;
+        width: 10rem;
+        left: 0;
       }
 
       .hero-eyebrow {
-        margin-bottom: 1.5rem;
-        margin-top: 0;
+        margin-bottom: 2.5rem;
       }
 
       .hero-body {
@@ -1980,16 +1988,10 @@
       visibility: hidden;
     }
 
-    .loading-logo {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: 0.04em;
-    }
-
-    .loading-logo span {
-      color: var(--accent);
+    .loading-logo-img {
+      width: 200px;
+      height: auto;
+      display: block;
     }
 
     .loading-bar-wrap {
