@@ -18,10 +18,29 @@ window.addEventListener('scroll', () => {
 
 // ── Troca selo ↔ logo no header ──
 const heroLogo = document.querySelector('.hero-logo-img');
+const footerLogo = document.querySelector('.footer-logo-img');
+
+let heroVisible = true;      // a página começa no topo
+let footerVisible = false;
+
+function updateHeaderLogo() {
+  // logo só aparece quando NENHUM dos dois logos da página está na tela
+  header.classList.toggle('show-logo', !heroVisible && !footerVisible);
+  header.classList.toggle('at-footer', footerVisible);   // ← nova linha
+}
+
 if (heroLogo) {
   new IntersectionObserver(([entry]) => {
-    header.classList.toggle('show-logo', !entry.isIntersecting);
+    heroVisible = entry.isIntersecting;
+    updateHeaderLogo();
   }, { rootMargin: '-80px 0px 0px 0px' }).observe(heroLogo);
+}
+
+if (footerLogo) {
+  new IntersectionObserver(([entry]) => {
+    footerVisible = entry.isIntersecting;
+    updateHeaderLogo();
+  }).observe(footerLogo);
 }
 
 // ── Mobile menu ──

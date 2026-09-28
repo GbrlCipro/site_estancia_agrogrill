@@ -263,6 +263,19 @@
       .reveal.visible {
         transform: none;
       }
+
+      /* Selo com medidas próprias quando o footer está na tela */
+      #header.at-footer .header-seal {
+        width: 11rem;
+        /* ajuste aqui */
+        height: 9rem;
+        /* mantenha igual à largura */
+        top: -0.75rem;
+        /* ajuste aqui */
+        margin-left: -2;
+        /* ajuste aqui */
+      }
+
     }
 
     /* Estado após rolar: logo aparece, selo some */
