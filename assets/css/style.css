@@ -80,7 +80,7 @@
 
     .eyebrow {
       font-family: var(--font-body);
-      font-size: 1rem;
+      font-size: 12.9px;
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -167,6 +167,7 @@
 
     .reveal.visible {
       opacity: 1;
+      justify-content: center;
     }
 
     .reveal-delay-1 {
@@ -255,25 +256,11 @@
     /* Selo maior só no desktop/notebook (o mobile fica como está) */
     @media (min-width: 1025px) {
       .header-seal {
-        width: 16.999rem;
-        height: 16.999rem;
-        margin-left: -3.5rem;
+        transform: translate(-7px, 24px) scale(2);
       }
 
       .reveal.visible {
         transform: none;
-      }
-
-      /* Selo com medidas próprias quando o footer está na tela */
-      #header.at-footer .header-seal {
-        width: 11rem;
-        /* ajuste aqui */
-        height: 9rem;
-        /* mantenha igual à largura */
-        top: -0.75rem;
-        /* ajuste aqui */
-        margin-left: -2;
-        /* ajuste aqui */
       }
 
     }
