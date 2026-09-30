@@ -26,7 +26,6 @@ let footerVisible = false;
 function updateHeaderLogo() {
   // logo só aparece quando NENHUM dos dois logos da página está na tela
   header.classList.toggle('show-logo', !heroVisible && !footerVisible);
-  header.classList.toggle('at-footer', footerVisible);   // ← nova linha
 }
 
 if (heroLogo) {
