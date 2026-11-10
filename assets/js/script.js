@@ -105,7 +105,6 @@ let currentSlide = 0;
 
 // Build dots
 const dotsContainer = document.getElementById('carouselDots');
-const totalSlides = Math.ceil(cards.length / getVisible());
 
 function getVisible() {
   return window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
